@@ -9,35 +9,28 @@
 </head>
 <body>
     <!-- Header Section -->
-    <header>
-        <div class="container">
+    <header class="site-header">
+        <div class="container header-inner">
             <div class="logo">
                 <a href="/">
-                <img src="logo.png" alt="Company Logo">
+                    <img src="logo.png" alt="Company Logo">
                 </a>
             </div>
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">Product</a></li>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="header-actions">
-                    <button>
-                        <i>🔍</i>
-                    </button>
-                    <button>
-                        <i>👤</i>
-                    </button>
-                    <button class="cart-btn">
-                        <i>🛒</i>
-                        <span class="cart-counter">3</span>
-                    </button>
-                </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="search-btn" title="Search">🔍</button>
+                <button class="user-btn" title="User Account">👤</button>
+                <button class="user-btn" title="cart-counter"></button>
+                </button>
             </div>
         </div>
     </header>
@@ -48,259 +41,62 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Shop</a></li>
-                <li><a href="#">Products</a></li>
+                <li>Products</li>
             </ul>
         </div>
     </div>
 
     <!-- Store Header -->
-    <div class="store-header">
+    <section class="store-header">
         <div class="container">
             <h1>Our Product Collection</h1>
-            <p>Discover our curated selection of indoor and outdoor plants to bring nature into your home and garden.</p>
+            <p>Discover our curated selection of Arts</p>
         </div>
-    </div>
+    </section>
 
     <!-- Main Content -->
     <main class="container">
-        <!-- Filter Section -->
-        <div class="filter-section">
-            <div class="filter-top">
-                <label for="sort-options" class="visually-hidden">Sort by</label>
-                <select id="sort-options">
-                    <option>Sort by: Featured</option>
-                    <option>Price: Low to High</option>
-                    <option>Price: High to Low</option>
-                    <option>Newest First</option>
-                    <option>Best Selling</option>
-                </select>
-                <div class="view-options">
-                    <button class="active">Grid</button>
-                    <button>List</button>
-                </div>
-            </div>
-            <div class="filter-tags">
-                <span class="filter-tag active">All Product</span>
-                <span class="filter-tag">Recycled Art</span>
-                <span class="filter-tag">Upcycled Art</span>
-                <span class="filter-tag">Painting</span>
-                <span class="filter-tag">Carving</span>
-                <span class="filter-tag">Flowering</span>
-                <span class="filter-tag">Tropical</span>
-            </div>
-        </div>
+        <!-- Filters Section -->
+        <aside class="filter-section">
+            <label for="sort-options">Sort by:</label>
+            <select id="sort-options">
+                <option>Featured</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Newest First</option>
+                <option>Best Selling</option>
+            </select>
+        </aside>
 
         <!-- Products Grid -->
-        <div class="products">
-            <!-- Product 1 -->
+        <section class="products-grid">
             <div class="product-card">
-                <div class="product-image">
-                    <img src="/api/placeholder/400/320" alt="Monstera Deliciosa">
-                    <span class="product-badge">New</span>
-                    <div class="product-wishlist">♡</div>
-                </div>
-                <div class="product-info">
-                    <div class="product-category">Recycled Art</div>
-                    <h3 class="product-title">Monstera Deliciosa</h3>
-                    <div class="product-price">
-                        <div>
-                            <span class="price">$29.99</span>
-                        </div>
-                        <button class="add-to-cart">Add to Cart</button>
-                    </div>
-                </div>
+                <img src="Recycled Plastic Art.jpg" alt="Monstera Deliciosa">
+                <h3>Recycled Plastic Art</h3>
+                <p class="price">$29.99</p>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
-
-            <!-- Product 2 -->
             <div class="product-card">
-                <div class="product-image">
-                    <img src="/api/placeholder/400/320" alt="Fiddle Leaf Fig">
-                    <div class="product-wishlist">♡</div>
-                </div>
-                <div class="product-info">
-                    <div class="product-category">Upcycled Art</div>
-                    <h3 class="product-title">Fiddle Leaf Fig</h3>
-                    <div class="product-price">
-                        <div>
-                            <span class="old-price">$45.99</span>
-                            <span class="price">$39.99</span>
-                        </div>
-                        <button class="add-to-cart">Add to Cart</button>
-                    </div>
-                </div>
+                <img src="Recycled Art.png" alt="Fiddle Leaf Fig">
+                <h3>Recycled Art</h3>
+                <p class="price">$39.99</p>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
-
-            <!-- Product 3 -->
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="/api/placeholder/400/320" alt="Snake Plant">
-                    <div class="product-wishlist">♡</div>
-                </div>
-                <div class="product-info">
-                    <div class="product-category">Painting</div>
-                    <h3 class="product-title">Snake Plant</h3>
-                    <div class="product-price">
-                        <div>
-                            <span class="price">$24.99</span>
-                        </div>
-                        <button class="add-to-cart">Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product 4 -->
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="/api/placeholder/400/320" alt="Peace Lily">
-                    <span class="product-badge">Sale</span>
-                    <div class="product-wishlist">♡</div>
-                </div>
-                <div class="product-info">
-                    <div class="product-category">Carving</div>
-                    <h3 class="product-title">Peace Lily</h3>
-                    <div class="product-price">
-                        <div>
-                            <span class="old-price">$34.99</span>
-                            <span class="price">$29.99</span>
-                        </div>
-                        <button class="add-to-cart">Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product 5 -->
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="/api/placeholder/400/320" alt="Aloe Vera">
-                    <div class="product-wishlist">♡</div>
-                </div>
-                <div class="product-info">
-                    <div class="product-category">Succulents</div>
-                    <h3 class="product-title">Aloe Vera</h3>
-                    <div class="product-price">
-                        <div>
-                            <span class="price">$19.99</span>
-                        </div>
-                        <button class="add-to-cart">Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product 6 -->
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="/api/placeholder/400/320" alt="ZZ Plant">
-                    <div class="product-wishlist">♡</div>
-                </div>
-                <div class="product-info">
-                    <div class="product-category">Indoor Plants</div>
-                    <h3 class="product-title">ZZ Plant</h3>
-                    <div class="product-price">
-                        <div>
-                            <span class="price">$27.99</span>
-                        </div>
-                        <button class="add-to-cart">Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product 7 -->
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="/api/placeholder/400/320" alt="String of Pearls">
-                    <span class="product-badge">Best Seller</span>
-                    <div class="product-wishlist">♡</div>
-                </div>
-                <div class="product-info">
-                    <div class="product-category">Hanging Plants</div>
-                    <h3 class="product-title">String of Pearls</h3>
-                    <div class="product-price">
-                        <div>
-                            <span class="price">$22.99</span>
-                        </div>
-                        <button class="add-to-cart">Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product 8 -->
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="/api/placeholder/400/320" alt="Pothos">
-                    <div class="product-wishlist">♡</div>
-                </div>
-                <div class="product-info">
-                    <div class="product-category">Trailing Plants</div>
-                    <h3 class="product-title">Golden Pothos</h3>
-                    <div class="product-price">
-                        <div>
-                            <span class="price">$18.99</span>
-                        </div>
-                        <button class="add-to-cart">Add to Cart</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </section>
 
         <!-- Pagination -->
         <div class="pagination">
-            <ul>
-                <li><a href="#">❮</a></li>
-                <li><a href="#" class="active">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">❯</a></li>
-            </ul>
+            <a href="#">❮</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">❯</a>
         </div>
     </main>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>About Us</h3>
-                    <p>We're passionate about bringing the beauty of nature into your living space with our carefully selected plants.</p>
-                </div>
-                <div class="footer-column">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Plant Care</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Customer Service</h3>
-                    <ul>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Shipping Policy</a></li>
-                        <li><a href="#">Returns & Refunds</a></li>
-                        <li><a href="#">Track Order</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Contact Us</h3>
-                    <ul>
-                        <li>Email: info@botanical.com</li>
-                        <li>Phone: (123) 456-7890</li>
-                        <li>Address: 123 Green Street, Plantville, PL 12345</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="copyright">© 2025 Botanical. All Rights Reserved.</div>
-                <div class="social-links">
-                    <a href="#">📘</a>
-                    <a href="#">📸</a>
-                    <a href="#">🐦</a>
-                    <a href="#">📌</a>
-                </div>
-            </div>
+            <p>© 2025 TIH Store. All Rights Reserved.</p>
         </div>
     </footer>
 </body>
