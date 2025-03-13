@@ -56,15 +56,9 @@ header {
     gap: 10px;
 }
 
-.logo-icon {
-    width: 30px;
-    height: 30px;
-    background-color: var(--primary-color);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
+.logo img {
+    width: auto;
+    height: 50px;
 }
 
 nav ul {
@@ -123,4 +117,5 @@ nav ul li a:hover {
 
 /* Breadcrumb */
 .breadcrumb {
-    padding
+    padding: 10px 0;
+}
