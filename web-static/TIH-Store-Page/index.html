@@ -54,19 +54,34 @@
         </div>
     </section>
 
-    <!-- Main Content -->
-    <main class="container">
-        <!-- Filters Section -->
-        <aside class="filter-section">
-            <label for="sort-options">Sort by:</label>
+<!-- Main Content -->
+<main class="container">
+    <!-- Filter Section -->
+    <div class="filter-section">
+        <div class="filter-top">
+            <label for="sort-options" class="visually-hidden">Sort by</label>
             <select id="sort-options">
-                <option>Featured</option>
+                <option>Sort by: Featured</option>
                 <option>Price: Low to High</option>
                 <option>Price: High to Low</option>
                 <option>Newest First</option>
                 <option>Best Selling</option>
             </select>
-        </aside>
+            <div class="view-options">
+                <button class="active">Grid</button>
+                <button>List</button>
+            </div>
+        </div>
+        <div class="filter-tags">
+            <span class="filter-tag active">All Plants</span>
+            <span class="filter-tag">Indoor</span>
+            <span class="filter-tag">Outdoor</span>
+            <span class="filter-tag">Succulents</span>
+            <span class="filter-tag">Cacti</span>
+            <span class="filter-tag">Flowering</span>
+            <span class="filter-tag">Tropical</span>
+        </div>
+    </div>
 
         <!-- Products Grid -->
         <section class="products-grid">
@@ -90,6 +105,16 @@
             <a href="#" class="active">1</a>
             <a href="#">2</a>
             <a href="#">❯</a>
+        </div>
+        <div class="footer-column">
+            <h3>Customer Service</h3>
+            <ul>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Shipping Policy</a></li>
+                <li><a href="#">Returns & Refunds</a></li>
+                <li><a href="#">Track Order</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
         </div>
     </main>
 
