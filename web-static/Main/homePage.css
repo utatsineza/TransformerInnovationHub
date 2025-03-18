@@ -17,12 +17,6 @@ h1 {
   color: #222;
 }
 
-h2 {
-  font-size: 46px;
-  line-height: 54px;
-  color: #222;
-}
-
 h4 {
   font-size: 20px;
   color: #222;
@@ -150,26 +144,28 @@ body {
 
 /* End hero */
 
-/* Section 1 */
+/* Section 1 Info 1 Banner */
 
 .section-p1 {
   padding: 40px 80px;
-
   padding-bottom: 50px;
   margin: 40px 0;
   height: 1000px;
   width: 100%;
   display: flex;
+  margin-top: 100px;
   background-color: hsla(0, 100%, 99%, 0.697);
 }
 
 .banner-right {
   background-image: url(https://images.unsplash.com/photo-1710179309652-c21ada5d11ee?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-  background-size: cover;
+  background-size: 1100px;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 100%;
-
   width: 50%;
   margin-right: 80px;
+  margin-top: -65px;
 }
 
 .banner-left {
@@ -177,6 +173,14 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+
+.banner-left h2 {
+  color: #088178;
+  font-size: 30px;
+  font-weight: 500;
+  padding-bottom: 20px;
+  margin-left: 10px;
 }
 
 .benefits {
@@ -210,11 +214,18 @@ body {
 #info1 button {
   background-color: #088178;
   color: white;
-  padding: 10px 20px;
+  padding: 5px 5px;
+  border-radius: 10px;
   border: 0;
   font-weight: 800;
+  width: 200px;
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: -10px;
+  margin-left: 10px;
+
+  &&:hover {
+    background-color: #3d8e41;
+  }
 }
 
 /* Mobile Responsivess section 1*/
@@ -276,8 +287,8 @@ body {
 
 .pro-container {
   display: inline;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 40px;
+  margin-right: 50px;
 }
 
 #product1 .pro-container {
@@ -288,8 +299,8 @@ body {
 }
 
 #product1 .pro {
-  width: 23%;
-  min-width: 240px;
+  width: 22%;
+  min-width: 210px;
   padding: 10px 12px;
   border: 1px solid #cce7d0;
   border-radius: 25px;
@@ -305,13 +316,16 @@ body {
 }
 
 #product1 .pro img {
-  width: 100%;
+  width: 80%;
   border-radius: 20px;
 }
 
 #product1 .pro .des {
   text-align: start;
   padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #product1 .pro .des span {
@@ -430,14 +444,20 @@ body {
   right: 10px;
 }
 
+/* ===============Advantage Section============= */
+
 .advantages {
+  margin-top: 50px;
   display: flex;
-  justify-content: space-around; /* Distributes items evenly */
+  justify-content: space-around;
+
   align-items: center;
-  flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
-  gap: 20px;
-  padding: 40px 20px;
-  background: #f8f9fa; /* Light background for contrast */
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px 5px;
+  background: #f8f9fa;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .advantage {
@@ -451,6 +471,7 @@ body {
   background: white;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px;
 }
 
 .advantage:hover {
