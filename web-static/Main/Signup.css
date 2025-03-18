@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 html {
@@ -14,9 +13,8 @@ html {
 body {
   min-height: 100vh;
   background-image: url(https://images.pexels.com/photos/3850512/pexels-photo-3850512.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-  background-size: 1100px;
+  background-size: cover;
   background-position: right;
-  background-repeat: no-repeat;
   overflow: hidden;
   filter: blur(px);
 }
@@ -36,7 +34,8 @@ body {
 
 h1 {
   font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 form {
@@ -55,18 +54,24 @@ form > div {
   justify-content: center;
 }
 
+:root {
+  --accent-color: #8672ff;
+  --base-color: white;
+  --text-color: #2e2b41;
+  --input-color: #f3f0ff;
+}
 form label {
   flex-shrink: 0;
-  background-color: tomato;
+  background-color: rgb(17, 66, 33);
+  fill: white;
+  color: white;
   height: 50px;
   width: 50px;
-
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  color: rgb(217, 209, 209);
-  font-weight: bold;
+  font-weight: 500;
 }
 
 form input {
@@ -80,11 +85,11 @@ form input {
   border: 2px solid rgb(217, 209, 209);
   border-left: none;
   transition: 150ms ease;
-  background-color: white;
+  background-color: rgb(217, 209, 209);
 }
 
 form input:hover {
-  border-color: rgb(143, 110, 104);
+  border-color: rgb(17, 66, 33);
 }
 
 form input:focus {
@@ -122,7 +127,7 @@ form button:focus {
 
 a {
   text-decoration: none;
-  color: green;
+  color: rgb(17, 66, 33);
 }
 
 a:hover {
@@ -136,10 +141,12 @@ a:hover {
   }
 }
 
-.incorrect {
-  background-color: red;
+form div.incorrect label {
+  background-color: #f06272;
 }
-
-.incorrect input {
-  border-color: red;
+form div.incorrect input {
+  border-color: #f06272;
+}
+#error-message {
+  color: #f06272;
 }
