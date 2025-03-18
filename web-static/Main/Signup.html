@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="Signup.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/dad03e859c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Sign up Here</h1>
+      <form>
+        <div class="incorrect">
+          <label for="firstname-input">
+            <i class="fa-solid fa-user"></i>
+          </label>
+
+          <input
+            required
+            type="text"
+            name="firstname"
+            id="firstname-input"
+            placeholder="Firstname"
+          />
+        </div>
+
+        <div>
+          <label for="email-input">
+            <i class="fa-solid fa-envelope"></i>
+          </label>
+
+          <input
+            required
+            type="email"
+            name="email"
+            id="email-input"
+            placeholder="Email"
+          />
+        </div>
+
+        <div>
+          <label for="password-input">
+            <i class="fa-solid fa-lock"></i>
+          </label>
+          <input
+            required
+            type="password"
+            name="password"
+            id="password-input"
+            placeholder="Password"
+          />
+        </div>
+
+        <div>
+          <label for="repeat-password-input">
+            <i class="fa-solid fa-lock"></i>
+          </label>
+          <input
+            re
+            quired
+            type="password"
+            name="repeat-password"
+            id="repeat-password-input"
+            placeholder="Repeat Password"
+          />
+        </div>
+
+        <button type="submit">Sign up now</button>
+      </form>
+
+      <p>Already have an account? <a href="Login.html">Login</a></p>
+    </div>
+  </body>
+</html>
