@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIH Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="/">
+                    <img src="logo.png" alt="Company Logo">
+                </a>
+            </div>
+            <nav class="main-nav"> 
+                <ul> 
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="search-btn" title="Search">🔍</button>
+                <button class="user-btn" title="User Account">👤</button>
+                <button class="user-btn" title="cart-counter"></button>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li>Products</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Store Header -->
+    <section class="store-header">
+        <div class="container">
+            <h1>Our Product Collection</h1>
+            <p>Discover our curated selection of Arts</p>
+        </div>
+    </section>
+
+<!-- Main Content -->
+<main class="container">
+    <!-- Filter Section -->
+    <div class="filter-section">
+        <div class="filter-top">
+            <label for="sort-options" class="visually-hidden">Sort by</label>
+            <select id="sort-options">
+                <option>Sort by: Featured</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Newest First</option>
+                <option>Best Selling</option>
+            </select>
+            <div class="view-options">
+                <button class="active">Grid</button>
+                <button>List</button>
+            </div>
+        </div>
+        <div class="filter-tags">
+            <span class="filter-tag active">All Plants</span>
+            <span class="filter-tag">Indoor</span>
+            <span class="filter-tag">Outdoor</span>
+            <span class="filter-tag">Succulents</span>
+            <span class="filter-tag">Cacti</span>
+            <span class="filter-tag">Flowering</span>
+            <span class="filter-tag">Tropical</span>
+        </div>
+    </div>
+
+        <!-- Products Grid -->
+        <section class="products-grid">
+            <div class="product-card">
+                <img src="Recycled Plastic Art.jpg" alt="Plastic Art">
+                <h3>Recycled Plastic Art</h3>
+                <p class="price">$29.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="Recycled Art.png" alt="Wall Deco">
+                <h3>Recycled Art</h3>
+                <p class="price">$39.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="Carving.jpg" alt="Wooden Art">
+                <h3>Carving</h3>
+                <p class="price">$49.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="Painting.jpg" alt="Painting">
+                <h3>Painting</h3>
+                <p class="price">$59
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="Eco-Friendly Art.jpg" alt="Sustainable Art">
+                <h3>Eco-Friendly Art</h3>
+                <p class="price">$69
+                <button class="add-to-cart">Add to Cart</button>
+        </section>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <a href="#">❮</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">❯</a>
+        </div>
+        <div class="footer-column">
+            <h3>Customer Service</h3>
+            <ul>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Shipping Policy</a></li>
+                <li><a href="#">Returns & Refunds</a></li>
+                <li><a href="#">Track Order</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2025 TIH Store. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
