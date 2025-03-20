@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 py-10">
+    <div class="max-w-4xl mx-auto bg-white p-8 shadow-lg rounded-lg">
+        <h2 class="text-2xl font-semibold mb-6">Checkout</h2>
+        
+        <form id="checkout-form">
+            <!-- Billing Details -->
+            <div class="mb-4">
+                <h3 class="text-lg font-medium mb-2">Billing Details</h3>
+                <input type="text" placeholder="Full Name" class="w-full p-2 border rounded mb-2" required>
+                <input type="email" placeholder="Email Address" class="w-full p-2 border rounded mb-2" required>
+                <input type="text" placeholder="Address" class="w-full p-2 border rounded mb-2" required>
+                <input type="text" placeholder="City" class="w-full p-2 border rounded mb-2" required>
+                <input type="text" placeholder="Phone Number" class="w-full p-2 border rounded mb-2" required>
+            </div>
+            
+            <!-- Shipping Options -->
+            <div class="mb-4">
+                <h3 class="text-lg font-medium mb-2">Shipping Method</h3>
+                <label for="shipping-method" class="sr-only">Choose a shipping method</label>
+                <select id="shipping-method" class="w-full p-2 border rounded" required>
+                    <option value="standard">Standard Shipping - $5.00</option>
+                    <option value="express">Express Shipping - $15.00</option>
+                    <option value="pickup">Store Pickup - Free</option>
+                </select>
+            </div>
+            
+            <!-- Payment Method -->
+            <div class="mb-4">
+                <h3 class="text-lg font-medium mb-2">Payment Method</h3>
+                <label for="payment-method" class="sr-only">Choose a payment method</label>
+                <select id="payment-method" class="w-full p-2 border rounded" required>
+                    <option value="credit_card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="apple_pay">Apple Pay</option>
+                </select>
+            </div>
+
+            <!-- Coupon Code -->
+            <div class="mb-4">
+                <h3 class="text-lg font-medium mb-2">Apply Coupon</h3>
+                <input type="text" id="coupon-code" placeholder="Enter coupon code" class="w-full p-2 border rounded mb-2">
+                <button type="button" onclick="applyCoupon()" class="bg-green-500 text-white py-2 px-4 rounded">Apply</button>
+            </div>
+            
+            <!-- Order Summary -->
+            <div class="mb-6">
+                <h3 class="text-lg font-medium mb-2">Order Summary</h3>
+                <div class="flex justify-between">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">$50.00</span>
+                </div>
+                <div class="flex justify-between">
+                    <span>Shipping:</span>
+                    <span id="shipping-cost">$5.00</span>
+                </div>
+                <div class="flex justify-between font-semibold text-lg mt-2">
+                    <span>Total:</span>
+                    <span id="total-cost">$55.00</span>
+                </div>
+            </div>
+            
+            <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded">Place Order</button>
+        </form>
+    </div>
+
+    <script>
+        function applyCoupon() {
+            let couponCode = document.getElementById("coupon-code").value;
+            let subtotal = 50.00;
+            let discount = 0;
+            if (couponCode === "DISCOUNT10") {
+                discount = subtotal * 0.10;
+            }
+            document.getElementById("subtotal").innerText = `$${(subtotal - discount).toFixed(2)}`;
+            updateTotal();
+        }
+
+        function updateTotal() {
+            let subtotal = parseFloat(document.getElementById("subtotal").innerText.replace('$', ''));
+            let shipping = parseFloat(document.getElementById("shipping-cost").innerText.replace('$', ''));
+            let total = subtotal + shipping;
+            document.getElementById("total-cost").innerText = `$${total.toFixed(2)}`;
+        }
+
+        document.getElementById("checkout-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Order placed successfully!");
+        });
+    </script>
+</body>
+</html>
