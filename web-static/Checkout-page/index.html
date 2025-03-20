@@ -40,15 +40,7 @@
                 <select id="payment-method" class="w-full p-2 border rounded" required>
                     <option value="credit_card">Credit Card</option>
                     <option value="paypal">PayPal</option>
-                    <option value="apple_pay">Apple Pay</option>
                 </select>
-            </div>
-
-            <!-- Coupon Code -->
-            <div class="mb-4">
-                <h3 class="text-lg font-medium mb-2">Apply Coupon</h3>
-                <input type="text" id="coupon-code" placeholder="Enter coupon code" class="w-full p-2 border rounded mb-2">
-                <button type="button" onclick="applyCoupon()" class="bg-green-500 text-white py-2 px-4 rounded">Apply</button>
             </div>
             
             <!-- Order Summary -->
@@ -71,18 +63,6 @@
             <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded">Place Order</button>
         </form>
     </div>
-
-    <script>
-        function applyCoupon() {
-            let couponCode = document.getElementById("coupon-code").value;
-            let subtotal = 50.00;
-            let discount = 0;
-            if (couponCode === "DISCOUNT10") {
-                discount = subtotal * 0.10;
-            }
-            document.getElementById("subtotal").innerText = `$${(subtotal - discount).toFixed(2)}`;
-            updateTotal();
-        }
 
         function updateTotal() {
             let subtotal = parseFloat(document.getElementById("subtotal").innerText.replace('$', ''));
