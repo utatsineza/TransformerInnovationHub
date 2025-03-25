@@ -8,15 +8,6 @@
 #login-form input {
   margin-bottom: 15px;
 }
-
-#login-form button {
-  background-color: #007bff;
-  color: white;
-  padding: 15px;
-  font-size: 18px;
-}
-
-#login-form p {
-  text-align: center;
-  margin-top: 15px;
+.loginp {
+  color: green;
 }

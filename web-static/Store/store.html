@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transformer Innovation Hub - Shop</title>
+    <link rel="stylesheet" href="store.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <script type="text/javascript" src="store.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <img src="logo.png" alt="" />
+          </div>
+          <ul>
+            <li><a href="#">Home </a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="icons">
+          <i class="fas fa-search" id="search-btn"></i>
+          <i class="fas fa-shopping-cart" id="cart-btn"></i>
+          <i class="fas fa-solid fa-user"></i>
+        </div>
+      </div>
+    </header>
+
+    <div class="banner">
+      <h1>Shop</h1>
+      <p>
+        <a href="../Main/homePageTest.html">Home > </a>
+        <a class="shop" href="store.html">Shop</a>
+      </p>
+    </div>
+
+    <div class="shop-controls">
+      <!-- <button class="filter-btn"><i class="fas fa-bars"></i> Filter</button> -->
+      <div class="sort-options">
+        <label
+          >Show
+          <select id="item-count">
+            <option>18</option>
+          </select></label
+        >
+        <label
+          >Sort by
+          <select id="sort-by">
+            <option value="default">Default</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+          </select></label
+        >
+      </div>
+    </div>
+
+    <section class="product-grid" id="product-container">
+      <!-- The products are inserted jere whenwer we add them on the js file so that we dont make this too bulky -->
+    </section>
+
+    <section class="pagination">
+      <button class="active">1</button>
+      <button>2</button>
+      <button>3</button>
+    </section>
+  </body>
+</html>
