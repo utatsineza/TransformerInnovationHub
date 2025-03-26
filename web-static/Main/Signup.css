@@ -20,11 +20,10 @@ body {
 }
 
 .container {
-  background-color: antiquewhite;
+  background-color: white;
   height: 100vh;
   width: max(40%, 600px);
   padding: 20px;
-  border-radius: 0 20px 20px 0;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -35,7 +34,21 @@ body {
 h1 {
   font-size: 2.5rem;
   font-weight: 900;
-  text-transform: uppercase;
+  color: #b37400;
+  margin-top: 10px;
+}
+
+.login-link {
+  color: #b37400;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-top: -25px;
+}
+
+.login-link a span {
+  color: #b37400;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 form {
@@ -45,7 +58,7 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 form > div {
@@ -54,15 +67,9 @@ form > div {
   justify-content: center;
 }
 
-:root {
-  --accent-color: #8672ff;
-  --base-color: white;
-  --text-color: #2e2b41;
-  --input-color: #f3f0ff;
-}
 form label {
   flex-shrink: 0;
-  background-color: rgb(17, 66, 33);
+  background-color: #b37400;
   fill: white;
   color: white;
   height: 50px;
@@ -82,32 +89,25 @@ form input {
   min-width: 0;
   font: inherit;
   border-radius: 0 10px 10px 0;
-  border: 2px solid rgb(217, 209, 209);
-  border-left: none;
+  border: 0.5px solid #835d18;
   transition: 150ms ease;
-  background-color: rgb(217, 209, 209);
+  background-color: white;
 }
 
 form input:hover {
-  border-color: rgb(17, 66, 33);
-}
-
-form input:focus {
-  outline: none;
-  border-color: rgb(200, 168, 161);
+  border-color: #b37400;
 }
 
 form input::placeholder {
-  color: rgb(46, 119, 38);
-  opacity: 1;
+  color: black;
 }
 
 form button {
-  margin-top: 10px;
+  margin-top: 30px;
   border: none;
   border-radius: 1000px;
   padding: 0.85em 4em;
-  background-color: rgb(201, 135, 65);
+  background-color: #b37400;
   color: white;
   font: inherit;
   font-weight: 600;
@@ -117,21 +117,18 @@ form button {
 }
 
 form button:hover {
-  background-color: rgb(143, 110, 104);
+  background-color: #c1ac87;
+  color: white;
 }
 
 form button:focus {
   outline: none;
-  background-color: rgb(200, 168, 161);
+  background-color: white;
 }
 
 a {
   text-decoration: none;
-  color: rgb(17, 66, 33);
-}
-
-a:hover {
-  text-decoration: underline;
+  color: white;
 }
 
 @media (max-width: 1100px) {
@@ -149,4 +146,16 @@ form div.incorrect input {
 }
 #error-message {
   color: #f06272;
+}
+
+.loginp {
+  font-size: 1rem;
+  color: #b37400;
+  margin-top: -10px;
+}
+
+.loginp a {
+  color: #b37400;
+  text-decoration: underline;
+  cursor: pointer;
 }
