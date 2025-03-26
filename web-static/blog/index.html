@@ -1,77 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog Page</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Blog</a></li>
-      </ul>
-    </nav>
-    <h1>Blog</h1>
-  </header>
-
-  <section class="blog-posts">
-    <article class="post">
-      <img src="image1.jpg" alt="Blog Image">
-      <div class="post-info">
-        <h2>Going all-in with millennial design</h2>
-        <p>Admin | 14 Oct 2022 | Wood</p>
-        <p>Lorem ipsum dolor sit amet...</p>
-        <a href="#">Read more</a>
-      </div>
-    </article>
-    <article class="post">
-      <img src="image2.jpg" alt="Blog Image">
-      <div class="post-info">
-        <h2>Handmade pieces that took time to make</h2>
-        <p>Admin | 14 Oct 2022 | Wood</p>
-        <p>Lorem ipsum dolor sit amet...</p>
-        <a href="#">Read more</a>
-      </div>
-    </article>
-  </section>
-
-  <aside>
-    <section class="categories">
-      <h3>Categories</h3>
-      <ul>
-        <li><a href="#">Crafts</a> (2)</li>
-        <li><a href="#">Design</a> (8)</li>
-        <li><a href="#">Handmade</a> (7)</li>
-        <li><a href="#">Interior</a> (1)</li>
-        <li><a href="#">Wood</a> (6)</li>
-      </ul>
-    </section>
-
-    <section class="recent-posts">
-      <h3>Recent Posts</h3>
-      <ul>
-        <li><a href="#">Going all-in with millennial design</a></li>
-        <li><a href="#">Exploring new ways of packaging</a></li>
-        <li><a href="#">Handmade pieces that took time to make</a></li>
-      </ul>
-    </section>
-  </aside>
-
-  <footer>
-    <div class="footer-info">
-      <p>&copy; 2025 Transformer Innovation Hub. All rights reserved.</p>
-      <div class="footer-links">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
+    <div class="container">
+        <main class="content">
+            <article class="post">
+                <img src="image 1.png" alt="Laptop and notes" class="post-image">
+                <div class="post-info">
+                    <div class="author">
+                        <img src="avatar.png" alt="Admin" class="avatar"> Admin &bull; 14 Oct 2022 &bull; <span class="category">Wood</span>
+                    </div>
+                    <h2>Going all-in with millennial design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </article>
+            <article class="post">
+                <img src="image 2.png" alt="Decor planning" class="post-image">
+                <div class="post-info">
+                    <div class="author">
+                        <img src="avatar.png" alt="Admin" class="avatar"> Admin &bull; 14 Oct 2022 &bull; <span class="category">Handmade</span>
+                    </div>
+                    <h2>Exploring new ways of decorating</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                    <a href="#" class="read-more">Read more</a>
+                </div>
+            </article>
+        </main>
+        <aside class="sidebar">
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="categories">
+                <h3>Categories</h3>
+                <ul>
+                    <li><i class="fas fa-paint-brush"></i> Crafts <span>2</span></li>
+                    <li><i class="fas fa-cogs"></i> Design <span>8</span></li>
+                    <li><i class="fas fa-hand-paper"></i> Handmade <span>7</span></li>
+                    <li><i class="fas fa-home"></i> Interior <span>1</span></li>
+                    <li><i class="fas fa-tree"></i> Wood <span>6</span></li>
+                </ul>
+            </div>
+            <div class="recent-posts">
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li><img src="thumb1.jpg" alt="Post Thumbnail"> Going all-in with millennial design</li>
+                    <li><img src="thumb2.jpg" alt="Post Thumbnail"> Exploring new ways of decorating</li>
+                    <li><img src="thumb3.jpg" alt="Post Thumbnail"> Handmade pieces that took time to make</li>
+                    <li><img src="thumb4.jpg" alt="Post Thumbnail"> Modern home in Milan</li>
+                    <li><img src="thumb5.jpg" alt="Post Thumbnail"> Colorful office space</li>
+                </ul>
+            </div>
+        </aside>
     </div>
-  </footer>
 </body>
 </html>
