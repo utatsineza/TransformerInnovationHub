@@ -104,7 +104,9 @@ nav ul li a:hover {
   display: flex;
   justify-content: space-between;
   padding: 20px 5%;
-  background: rgb(159, 128, 128);
+  background: none;
+  margin-top: 50px;
+  margin-left: 30px;
 }
 
 .filter-btn {
@@ -124,7 +126,7 @@ nav ul li a:hover {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   padding: 20px 5%;
-  margin-top: 150px;
+  margin-top: -15px;
 }
 
 .product {
@@ -189,4 +191,91 @@ nav ul li a:hover {
 
 .pagination .active {
   background: gold;
+}
+
+/* Banner */
+#banner {
+  margin-top: 1px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #b78f2e;
+}
+
+.bannercontainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 50px;
+  background-color: antiquewhite;
+}
+
+.banner-in {
+  display: flex;
+}
+
+.banner-in {
+  transition: 0.3s;
+}
+
+.banner-in .iconn {
+  font-size: 2rem;
+  color: black;
+  margin-top: 4px;
+  width: 50px;
+}
+
+.banner-in :hover {
+  font-size: 1.2rem;
+  color: #000;
+  transition: 0.3s;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #b37400;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 85px;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  margin: 10px 0;
+}
+
+.footer-links a {
+  color: #bbb;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #b78f2e;
 }
