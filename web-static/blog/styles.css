@@ -68,6 +68,7 @@ body {
 /* Main Content */
 .content {
   width: 65%;
+  height: 100%;
 }
 
 .post {
