@@ -407,7 +407,7 @@ a {
 }
 
 .footer {
-  background-color: #b37400;
+  background-color: rgb(233, 181, 129);
   color: white;
   text-align: center;
   padding: 20px;
@@ -427,14 +427,14 @@ a {
 }
 
 .footer-links a {
-  color: #bbb;
+  color: white;
   text-decoration: none;
   margin: 0 15px;
   font-size: 14px;
 }
 
 .footer-links a:hover {
-  color: white;
+  color: black;
 }
 
 .social-icons {

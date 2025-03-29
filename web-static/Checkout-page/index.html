@@ -1,74 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checkout Page</title>
-    <link rel="stylesheet" href="checkout-styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="container">
-        <h2>Checkout</h2>
-        
-        <form id="checkout-form">
-            <div>
-                <h3>Billing Details</h3>
-                <input type="text" placeholder="Full Name" required>
-                <input type="email" placeholder="Email Address" required>
-                <input type="text" placeholder="Address" required>
-                <input type="text" placeholder="City" required>
-                <input type="text" placeholder="Phone Number" required>
-            </div>
-            
-            <div>
-                <h3>Shipping Method</h3>
-                <label for="shipping-method">Choose a shipping method:</label>
-                <select id="shipping-method" required>
-                    <option value="standard">Standard Shipping - $5.00</option>
-                    <option value="express">Express Shipping - $15.00</option>
-                    <option value="pickup">Store Pickup - Free</option>
-                </select>
-            </div>
-            
-            <div>
-                <h3>Payment Method</h3>
-                <label for="payment-method">Choose a payment method:</label>
-                <select id="payment-method" required>
-                    <option value="credit_card">Credit Card</option>
-                    <option value="paypal">PayPal</option>
-                </select>
-            </div>
-            
-            <div>
-                <h3>Order Summary</h3>
-                <div>
-                    <span>Subtotal:</span>
-                    <span id="subtotal">$50.00</span>
-                </div>
-                <div>
-                    <span>Shipping:</span>
-                    <span id="shipping-cost">$5.00</span>
-                </div>
-                <div>
-                    <span>Total:</span>
-                    <span id="total-cost">$55.00</span>
-                </div>
-            </div>
-            
-            <button type="submit">Place Order</button>
-        </form>
-        
-        <div class="action-buttons">
-            <button onclick="window.location.href='index.html'" class="back-button">Back to Home</button>
-            <button onclick="window.location.href='contact.html'" class="support-button">Contact Support</button>
+      <h2>Checkout</h2>
+
+      <form id="checkout-form">
+        <div>
+          <h3>Billing Details</h3>
+          <input type="text" placeholder="Full Name" required />
+          <input type="email" placeholder="Email Address" required />
+          <input type="text" placeholder="Address" required />
+          <input type="text" placeholder="City" required />
+          <input type="text" placeholder="Phone Number" required />
         </div>
+
+        <div>
+          <h3>Shipping Method</h3>
+          <label for="shipping-method">Choose a shipping method:</label>
+          <select id="shipping-method" required>
+            <option value="standard">Standard Shipping - $5.00</option>
+            <option value="express">Express Shipping - $15.00</option>
+            <option value="pickup">Store Pickup - Free</option>
+          </select>
+        </div>
+
+        <div>
+          <h3>Payment Method</h3>
+          <label for="payment-method">Choose a payment method:</label>
+          <select id="payment-method" required>
+            <option value="credit_card">Credit Card</option>
+            <option value="paypal">PayPal</option>
+          </select>
+        </div>
+
+        <div>
+          <h3>Order Summary</h3>
+          <div>
+            <span>Subtotal:</span>
+            <span id="subtotal">$50.00</span>
+          </div>
+          <div>
+            <span>Shipping:</span>
+            <span id="shipping-cost">$5.00</span>
+          </div>
+          <div>
+            <span>Total:</span>
+            <span id="total-cost">$55.00</span>
+          </div>
+        </div>
+
+        <button type="submit">Place Order</button>
+      </form>
+
+      <div class="action-buttons">
+        <button onclick="window.location.href='index.html'" class="back-button">
+          Back to Home
+        </button>
+        <button
+          onclick="window.location.href='contact.html'"
+          class="support-button"
+        >
+          Contact Support
+        </button>
+      </div>
     </div>
 
     <script>
-        document.getElementById("checkout-form").addEventListener("submit", function(event) {
-            event.preventDefault();
-            alert("Order placed successfully!");
+      document
+        .getElementById("checkout-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          alert("Order placed successfully!");
         });
     </script>
-</body>
+  </body>
 </html>
