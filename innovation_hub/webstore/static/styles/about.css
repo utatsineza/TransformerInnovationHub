@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f8f8f8;
+    color: #333;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 80px 20px;
+}
+
+.hero-section h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* About Section */
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background: white;
+}
+
+.about-content {
+    max-width: 500px;
+    text-align: left;
+    padding: 20px;
+}
+
+.about-container img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* Mission Section */
+.mission-section {
+    padding: 50px 20px;
+    background: #28a745;
+    color: white;
+}
+
+/* Team Section */
+.team-section {
+    padding: 50px 20px;
+}
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 40px 20px;
+    background: #333;
+    color: white;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background: #222;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content {
+        text-align: center;
+    }
+}

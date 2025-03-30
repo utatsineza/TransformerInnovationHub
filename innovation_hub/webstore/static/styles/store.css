@@ -1,0 +1,281 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 100px;
+  position: fixed;
+  z-index: 1000;
+  margin-top: -10px;
+  background-color: rgb(238, 193, 134);
+}
+
+.logo {
+}
+
+.logo img {
+  width: 190px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-left: 250px;
+  font-size: 1.2rem;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav ul li a:hover {
+  color: #f26a2e;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icons i {
+  font-size: 1.5rem;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.icons i:hover {
+  color: #f26a2e;
+  transition: 0.3s;
+}
+
+/* Banner */
+.banner {
+  height: 50vh;
+  color: black;
+  text-align: center;
+  padding-top: 150px;
+  font-size: 24px;
+}
+
+.banner p {
+  font-size: 18px;
+}
+
+.banner p a {
+  color: #f26a2e;
+  text-decoration: none;
+}
+
+/* Shop Controls */
+.shop-controls {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 5%;
+  background: none;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.filter-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.sort-options select {
+  padding: 5px;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px 5%;
+  margin-top: -15px;
+}
+
+.product {
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  height: 410px;
+}
+
+.product img {
+  width: 90%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product h3 {
+  margin: 15px;
+  font-size: 18px;
+  text-align: start;
+}
+
+.product p {
+  color: #555;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: start;
+  margin: 15px;
+}
+
+.product-actions {
+  display: flex;
+  justify-content: center;
+  border-radius: 80px;
+  align-items: center;
+  margin: 15px;
+  height: 30px;
+  width: 40px;
+  background-color: #f26a2e;
+  position: relative;
+  cursor: pointer;
+  left: 180px;
+  bottom: 45px;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pagination .active {
+  background: gold;
+}
+
+/* Banner */
+#banner {
+  margin-top: 1px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #b78f2e;
+}
+
+.bannercontainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 50px;
+  background-color: antiquewhite;
+}
+
+.banner-in {
+  display: flex;
+}
+
+.banner-in {
+  transition: 0.3s;
+}
+
+.banner-in .iconn {
+  font-size: 2rem;
+  color: black;
+  margin-top: 4px;
+  width: 50px;
+}
+
+.banner-in :hover {
+  font-size: 1.2rem;
+  color: #000;
+  transition: 0.3s;
+}
+
+/* Footer */
+
+.footer {
+  background-color: rgb(233, 181, 129);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 85px;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  margin: 10px 0;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: black;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #b78f2e;
+}

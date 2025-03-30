@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="cart-container">
+        <h2>Cart</h2>
+
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="product1.jpg" alt="Product 1">
+                <div class="item-details">
+                    <h4>Carving</h4>
+                    <p>$<span class="item-price">20.00</span></p>
+                </div>
+                <div class="quantity">
+                    <button class="decrease">−</button>
+                    <input type="text" value="1" class="quantity-input" title="Enter quantity" placeholder="Quantity">
+                    <button class="increase">+</button>
+                </div>
+                <p class="total-price">$20.00</p>
+                <button class="remove-item">❌</button>
+            </div>
+
+            <div class="cart-item">
+                <img src="product2.png" alt="Product 2">
+                <div class="item-details">
+                    <h4>Map on the wall</h4>
+                    <p>$<span class="item-price">15.00</span></p>
+                </div>
+                <div class="quantity">
+                    <button class="decrease">−</button>
+                    <input type="text" value="1" class="quantity-input" title="Enter quantity" placeholder="Quantity">
+                    <button class="increase">+</button>
+                </div>
+                <p class="total-price">$15.00</p>
+                <button class="remove-item">❌</button>
+            </div>
+        </div>
+
+        <div class="order-summary">
+            <h3>Order Summary</h3>
+            <p>Subtotal: $<span id="subtotal">35.00</span></p>
+            <p>Tax (5%): $<span id="tax">1.75</span></p>
+            <p><strong>Total: $<span id="total">36.75</span></strong></p>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

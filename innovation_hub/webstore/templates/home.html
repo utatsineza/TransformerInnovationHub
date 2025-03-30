@@ -1,11 +1,343 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Welcome to our page</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home homePage</title>
+    <link rel="stylesheet" href="{% static 'styles/home.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <img src="logo.png" alt="" />
+          </div>
+          <ul>
+            <li><a href="{% url 'webstore:home' %}">Home </a></li>
+            <li><a href="{% url 'webstore:store' %}">Shop</a></li>
+            <li><a href="{% url 'webstore:blog' %}">Blog</a></li>
+            <li><a href="{% url 'webstore:about' %}">About</a></li>
+            <li><a href="{% url 'webstore:contact' %}">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="icons">
+          <a class="fas fa-search" id="search-btn" href="#"></a>
+          <a class="fas fa-shopping-cart" id="cart-btn" href="{% url 'webstore:cart' %}"></a>
+          <a class="fas fa-solid fa-user" href="#"></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+
+
+
+
+
+
+
+    <section id="hero">
+
+      <div class="hero container">
+        <div class="hero-inside">
+          <h1>Tranformer <br>
+            Innovation Hub</h1>
+          <p>When Art Meets Innovation</p>
+          <button><a href="">SHOP NOW</a></button>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Banner -->
+
+    <section id="banner" >
+
+      <div class="bannercontainer">
+
+        <div class="banner-in">
+          <div class="iconn">
+            <i class="fas fa-headset"></i>
+
+          </div>
+          <div class="text">
+            <h5>Shop With an Expert</h5>
+            <p>
+              Get the best advice from our experts
+            </p>
+          </div>
+        </div>
+
+        <div class="banner-in">
+          <div class="iconn">
+            <i class="fas fa-truck"></i>
+
+          </div>
+          <div class="text">
+            <h5>Free Shipping</h5>
+            <p>
+              Free shipping on all orders over $100
+            </p>
+          </div>
+        </div>
+
+        <div class="banner-in">
+          <div class="iconn">
+            <i class="fas fa-shield"></i>
+          </div>
+          <div class="text">
+            <h5>100% Aunthentic</h5>
+            <p>
+              We only sell authentic products
+            </p>
+          </div>
+        </div>
+    </section>
+
+
+
+    <!-- Featured Categories -->
+
+
+
+
+
+  <div class="featured-categories">
+      <div class="title">
+        <h2>Featured Categories</h2>
+      </div>
+
+      <div class="categories">
+
+        <div class="categoyyBox">
+
+          <div class="categoryimage">
+          <img src="./Images/wood.jpg">
+
+          <div class="titre">
+          <h3>Wood</h3>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+      <div class="categoyyBox">
+
+        <div class="categoryimage">
+          <img src="./Images/plastic.jpg">
+        </div>
+
+        <div class="titre">
+          <h3>Plastic</h3>
+        </div>
+      </div>
+
+      <div class="categoyyBox">
+
+        <div class="categoryimage">
+          <img src="./Images/metal.jpg">
+        </div>
+
+        <div class="titre">
+          <h3>Metals</h3>
+        </div>
+
+
+      </div>
+
+      <div class="categoyyBox">
+
+        <div class="categoryimage">
+          <img src="./Images/glass.jpg">
+        </div>
+
+        <div class="titre">
+          <h3>Glass</h3>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="artCollection">
+
+      <div class="title2">
+        <h2>Discover our New Artists Collection</h2>
+      </div>
+
+
+    <div class="pro-container">
+
+      <div class="product-box">
+
+        <div class="product-image-container">
+            <img src="Images/item1.jpg" alt="Product Image" class="product-image">
+        </div>
+
+        <div class="product-info">
+            <h3 class="product-name">Carton Portrait</h3>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+
+            </div>
+
+            <p class="price">$998.99</p>
+            <a href="../Store/store.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+        </div>
+      </div>
+
+
+      <div class="product-box">
+
+        <div class="product-image-container">
+            <img src="Images/item5.jpg" alt="Product Image" class="product-image">
+        </div>
+
+        <div class="product-info">
+            <h3 class="product-name">Wine bottle</h3>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+
+            </div>
+
+            <p class="price">$99.99</p>
+            <a href="{% url 'webstore:store' %}" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+        </div>
+      </div>
+
+
+      <div class="product-box">
+
+        <div class="product-image-container">
+            <img src="Images/item2.jpg" alt="Product Image" class="product-image">
+        </div>
+
+        <div class="product-info">
+            <h3 class="product-name">Hero</h3>
+
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+
+            </div>
+
+            <p class="price">$589.99</p>
+            <a href="{% url 'webstore:store' %}" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+        </div>
+      </div>
+
+      <div class="product-box">
+
+        <div class="product-image-container">
+            <img src="Images/item3.jpg" alt="Product Image" class="product-image">
+        </div>
+
+        <div class="product-info">
+            <h3 class="product-name">Inner Side</h3>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+
+            </div>
+
+            <p class="price">$959.99</p>
+            <a href="{% url 'webstore:store' %}" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+        </div>
+      </div>
+
+      <div class="product-box">
+
+        <div class="product-image-container">
+            <img src="Images/item4.jpg" alt="Product Image" class="product-image">
+        </div>
+
+        <div class="product-info">
+            <h3 class="product-name">The face of the World</h3>
+
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+
+            </div>
+
+            <p class="price">$998.99</p>
+            <a href="{% url 'webstore:store' %}" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <button class="show-more">Show More</button>
+
+    </div>
+
+    <div class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Stay updated with our latest news and offers!</p>
+        <input type="email" placeholder="Enter your email" required>
+        <button>Subscribe</button>
+    </div>
+
+
+    <div class="footer">
+    <div class="footer-content">
+        <p>&copy; 2025 Transformer Innovation Hub. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="{% url 'webstore:contact' %}">Contact Us</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/share/18xL1zmd9h/
+"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/transformer_innovation_hub?igsh=MW50djNybmE0ZGo0bQ== "><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</div>
+
+
+
+  </body>
 </html>
