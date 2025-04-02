@@ -45,8 +45,9 @@
     font-size: 14.5px;
 }
 .main-menu ul li a:hover {
-    border-bottom: 2px solid white;
-    padding-bottom: 8px;
+    /* border-bottom: 2px solid white;
+    padding-bottom: 8px; */
+    color: #5ba515;
 }
 
 
