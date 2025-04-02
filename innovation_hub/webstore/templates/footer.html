@@ -5,16 +5,21 @@
                 <div class="upper-footer">
                     <div class="footer-section">
                         <h2 class="footer-heading">About <span>Us</span></h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus nostrum repellat placeat. Libero, voluptates. Architecto nulla repellendus quisquam ducimus quae laudantium maxime alias, quos hic eveniet! Quos atque dolorem labore?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti molestiae adipisci iste nemo error enim exercitationem, </p>
+                        <p>We are a platform that bridges the gap between pollution and
+                            art, empowering artists who transform recycled materials into
+                            breathtaking masterpieces. Our mission is to give these
+                            creators visibility while promoting sustainable living through
+                            ethical commerce. Join us in turning waste into wonder—one
+                            artwork at a time.</p>
                     </div>
                     <div class="footer-section">
                         <h2 class="footer-heading">Quick Links</h2>
                         <ul>
-                            <li><span>> </span><a href="home.html">Home</a></li>
-                            <li><span>> </span><a href="shop.html">Shop</a></li>
-                            <li><span>> </span><a href="about.html">About us</a></li>
-                            <li><span>> </span><a href="home.html#blog">Blog</a></li>
-                            <li><span>> </span><a href="contact.html">Contact</a></li>
+                            <li><span>> </span><a href="{% url 'webstore:home' %}">Home</a></li>
+                            <li><span>> </span><a href="{% url 'webstore:shop' %}">Shop</a></li>
+                            <li><span>> </span><a href="{% url 'webstore:about' %}">About us</a></li>
+                            <li><span>> </span><a href="#blog">Blog</a></li>
+                            <li><span>> </span><a href="{% url 'webstore:contact' %}">Contact</a></li>
                         </ul>
                     </div>
                     <div class="footer-section">
