@@ -67,49 +67,7 @@
     <!-- end news-letter -->
 
     <!-- footer -->
-    <footer class="main-footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-tabs">
-                    <div class="upper-footer">
-                        <div class="footer-section">
-                            <h2 class="footer-heading">About <span>Us</span></h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus nostrum repellat placeat. Libero, voluptates. Architecto nulla repellendus quisquam ducimus quae laudantium maxime alias, quos hic eveniet! Quos atque dolorem labore?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti molestiae adipisci iste nemo error enim exercitationem, </p>
-                        </div>
-                        <div class="footer-section">
-                            <h2 class="footer-heading">Quick Links</h2>
-                            <ul>
-                                <li><span>> </span><a href="{% url 'webstore:home' %}">Home</a></li>
-                                <li><span>> </span><a href="{% url 'webstore:shop' %}">Shop</a></li>
-                                <li><span>> </span><a href="{% url 'webstore:about' %}">About us</a></li>
-                                <li><span>> </span><a href="{% url 'webstore:home' %}#blog">Blog</a></li>
-                                <li><span>> </span><a href="{% url 'webstore:contact' %}">Contact</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-section">
-                            <h2 class="footer-heading">Get in Touch</h2>
-                            <ul>
-                                <li>Email: support@recycleart.com</li>
-                                <li>Phone: +250 791275915</li>
-                                <li>Location: Masoro, Kigali - Rwanda</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="copyright">
-                        <div><p> &copy; 2025 <span>Transformer Innovation Hub</span> | All rights reserved</p></div>
-                        <div class="social-icon">
-                            <ul>
-                                <li>facebook</li>
-                                <li>Twitter</li>
-                                <li>Instagram</li>
-                                <li>LinkedIn</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    {% include 'footer.html' %}
     <!-- end footer -->
      <!-- script -->
      <script>
