@@ -1,172 +1,195 @@
 <!-- templates layout.html -->
-{% extends 'layout.html' %}
-{% block title %}Shop - Innovation Hub{% endblock %}
-
+{% extends 'layout.html' %} {% block title %}Shop - Innovation Hub{% endblock %}
 {% block page_content %}
-    <div class="search-filters">
-        <div class="container">
-            <div class="row search-row">
-                <div class="search">
-                    <form action="">
-                        <input type="text" name="" id="" placeholder="Search product">
-                        <!-- search-icon to implement submit -->
-                         <input type="submit" name="" id="search-btn" value="search">
-                    </form>
-                </div>
-                <div class="sort-products">
-                    <label for="sort-form"></label>
-                    <div class="sort-form">
-                        <form action="" class="sort-form-block">
-                            <label for="">Sort By: </label>
-                            <input type="text" name="" id="">
-                            <!-- drop -down list -->
-                        </form>
-                    </div>
-                </div>
-            </div>
+<div class="search-filters">
+  <div class="container">
+    <div class="row search-row">
+      <div class="search">
+        <form action="">
+          <input type="text" name="" id="" placeholder="Search product" />
+          <!-- search-icon to implement submit -->
+          <input type="submit" name="" id="search-btn" value="search" />
+        </form>
+      </div>
+      <div class="sort-products">
+        <label for="sort-form"></label>
+        <div class="sort-form">
+          <form action="" class="sort-form-block">
+            <label for="">Sort By: </label>
+            <input type="text" name="" id="" />
+            <!-- drop -down list -->
+          </form>
         </div>
+      </div>
     </div>
+  </div>
+</div>
 
-    <div class="product-display">
-        <div class="container">
-            <div class="row">
-                <div class="products-view">
-                    <div class="shop-product-item">
-                        <div class="shop-product-img">
-                            <img src="/static/img/products/art-necklace.webp" alt="">
-                        </div>
-                        <div class="shop-product-meta">
-                            <h4 class="product-name">Product</h4>
-                            <p class="product-price">$10</p>
-                            <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i> add to Cart</a>
-                        </div>
-                    </div>
-                    <div class="shop-product-item">
-                        <div class="shop-product-img">
-                            <img src="/static/img/products/art-necklace.webp" alt="">
-                        </div>
-                        <div class="shop-product-meta">
-                            <h4 class="product-name">Product</h4>
-                            <p class="product-price">$10</p>
-                            <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i> add to Cart</a>
-                        </div>
-                    </div>
-                    <div class="shop-product-item">
-                        <div class="shop-product-img">
-                            <img src="/static/img/products/art-necklace.webp" alt="">
-                        </div>
-                        <div class="shop-product-meta">
-                            <h4 class="product-name">Product</h4>
-                            <p class="product-price">$10</p>
-                            <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i> add to Cart</a>
-                        </div>
-                    </div>
-                    <div class="shop-product-item">
-                        <div class="shop-product-img">
-                            <img src="/static/img/products/art-necklace.webp" alt="">
-                        </div>
-                        <div class="shop-product-meta">
-                            <h4 class="product-name">Product</h4>
-                            <p class="product-price">$10</p>
-                            <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i> add to Cart</a>
-                        </div>
-                    </div>
-                    <div class="shop-product-item">
-                        <div class="shop-product-img">
-                            <img src="/static/img/products/art-necklace.webp" alt="">
-                        </div>
-                        <div class="shop-product-meta">
-                            <h4 class="product-name">Product</h4>
-                            <p class="product-price">$10</p>
-                            <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i> add to Cart</a>
-                        </div>
-                    </div>
-                    <div class="shop-product-item">
-                        <div class="shop-product-img">
-                            <img src="/static/img/products/art-necklace.webp" alt="">
-                        </div>
-                        <div class="shop-product-meta">
-                            <h4 class="product-name">Product</h4>
-                            <p class="product-price">$10</p>
-                            <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i> add to Cart</a>
-                        </div>
-                    </div>
-                    <div class="shop-product-item">
-                        <div class="shop-product-img">
-                            <img src="/static/img/products/art-necklace.webp" alt="">
-                        </div>
-                        <div class="shop-product-meta">
-                            <h4 class="product-name">Product</h4>
-                            <p class="product-price">$10</p>
-                            <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i> add to Cart</a>
-                        </div>
-                    </div>
-                    <div class="shop-product-item">
-                        <div class="shop-product-img">
-                            <img src="/static/img/products/art-necklace.webp" alt="">
-                        </div>
-                        <div class="shop-product-meta">
-                            <h4 class="product-name">Product</h4>
-                            <p class="product-price">$10</p>
-                            <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i> add to Cart</a>
-                        </div>
-                    </div>
-                    <div class="shop-product-item">
-                        <div class="shop-product-img">
-                            <img src="/static/img/products/art-necklace.webp" alt="">
-                        </div>
-                        <div class="shop-product-meta">
-                            <h4 class="product-name">Product</h4>
-                            <p class="product-price">$10</p>
-                            <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i> add to Cart</a>
-                        </div>
-                    </div>
-                    <div class="shop-product-item">
-                        <div class="shop-product-img">
-                            <img src="/static/img/products/art-necklace.webp" alt="">
-                        </div>
-                        <div class="shop-product-meta">
-                            <h4 class="product-name">Product</h4>
-                            <p class="product-price">$10</p>
-                            <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i> add to Cart</a>
-                        </div>
-                    </div>
-                    <div class="shop-product-item">
-                        <div class="shop-product-img">
-                            <img src="/static/img/products/art-necklace.webp" alt="">
-                        </div>
-                        <div class="shop-product-meta">
-                            <h4 class="product-name">Product</h4>
-                            <p class="product-price">$10</p>
-                            <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i> add to Cart</a>
-                        </div>
-                    </div>
-                    <div class="shop-product-item">
-                        <div class="shop-product-img">
-                            <img src="/static/img/products/art-necklace.webp" alt="">
-                        </div>
-                        <div class="shop-product-meta">
-                            <h4 class="product-name">Product</h4>
-                            <p class="product-price">$10</p>
-                            <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i> add to Cart</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div class="product-display">
+  <div class="container">
+    <div class="row">
+      <div class="products-view">
+        <div class="shop-product-item">
+          <div class="shop-product-img">
+            <img src="/static/img/products/art-necklace.webp" alt="" />
+          </div>
+          <div class="shop-product-meta">
+            <h4 class="product-name">Necklace</h4>
+            <p class="product-price">$10</p>
+            <a href="#" class="add-to-cart"
+              ><i class="fas fa-shopping-cart"></i> add to Cart</a
+            >
+          </div>
         </div>
-    </div>
+        <div class="shop-product-item">
+          <div class="shop-product-img">
+            <img src="/static/img/products/glass.jpg" alt="" />
+          </div>
+          <div class="shop-product-meta">
+            <h4 class="product-name">Glass Bottle Light</h4>
+            <p class="product-price">$35</p>
+            <a href="#" class="add-to-cart"
+              ><i class="fas fa-shopping-cart"></i> add to Cart</a
+            >
+          </div>
+        </div>
+        <div class="shop-product-item">
+          <div class="shop-product-img">
+            <img src="/static/img/products/item3.jpg" alt="" />
+          </div>
+          <div class="shop-product-meta">
+            <h4 class="product-name">Art piece</h4>
+            <p class="product-price">$125</p>
+            <a href="#" class="add-to-cart"
+              ><i class="fas fa-shopping-cart"></i> add to Cart</a
+            >
+          </div>
+        </div>
+        <div class="shop-product-item">
+          <div class="shop-product-img">
+            <img src="/static/img/products/item5.jpg" alt="" />
+          </div>
+          <div class="shop-product-meta">
+            <h4 class="product-name">Decorative bottle</h4>
+            <p class="product-price">$50</p>
+            <a href="#" class="add-to-cart"
+              ><i class="fas fa-shopping-cart"></i> add to Cart</a
+            >
+          </div>
+        </div>
+        <div class="shop-product-item">
+          <div class="shop-product-img">
+            <img src="/static/img/products/metal.jpg" alt="" />
+          </div>
+          <div class="shop-product-meta">
+            <h4 class="product-name">Pencil Container</h4>
+            <p class="product-price">$10</p>
+            <a href="#" class="add-to-cart"
+              ><i class="fas fa-shopping-cart"></i> add to Cart</a
+            >
+          </div>
+        </div>
+        <div class="shop-product-item">
+          <div class="shop-product-img">
+            <img src="/static/img/products/plastic.jpg" alt="" />
+          </div>
+          <div class="shop-product-meta">
+            <h4 class="product-name">Plastic Broom</h4>
+            <p class="product-price">$30</p>
+            <a href="#" class="add-to-cart"
+              ><i class="fas fa-shopping-cart"></i> add to Cart</a
+            >
+          </div>
+        </div>
+        <div class="shop-product-item">
+          <div class="shop-product-img">
+            <img src="/static/img/products/seats.jpg" alt="" />
+          </div>
+          <div class="shop-product-meta">
+            <h4 class="product-name">Dining Chairs</h4>
+            <p class="product-price">$200</p>
+            <a href="#" class="add-to-cart"
+              ><i class="fas fa-shopping-cart"></i> add to Cart</a
+            >
+          </div>
+        </div>
+        <div class="shop-product-item">
+          <div class="shop-product-img">
+            <img src="/static/img/products/chair.jpg" alt="" />
+          </div>
+          <div class="shop-product-meta">
+            <h4 class="product-name">Unique chair</h4>
+            <p class="product-price">$140</p>
+            <a href="#" class="add-to-cart"
+              ><i class="fas fa-shopping-cart"></i> add to Cart</a
+            >
+          </div>
+        </div>
+        <div class="shop-product-item">
+          <div class="shop-product-img">
+            <img src="/static/img/products/jeansBags.jpg" alt="" />
+          </div>
+          <div class="shop-product-meta">
+            <h4 class="product-name">The jeans Bag</h4>
+            <p class="product-price">$60</p>
+            <a href="#" class="add-to-cart"
+              ><i class="fas fa-shopping-cart"></i> add to Cart</a
+            >
+          </div>
+        </div>
 
-    <div class="pages-change">
-        <div class="container">
-            <div class="row">
-                <div class="pg-change-icon">
-                    <a href="#" class="pg-change-link"> < </a>
-                    <a href="#" class="pg-change-link"> 1 </a>
-                    <a href="#" class="pg-change-link"> 2 </a>
-                    <a href="#" class="pg-change-link"> ... </a>
-                    <a href="#" class="pg-change-link"> > </a>
-                </div>
-            </div>
+        <div class="shop-product-item">
+          <div class="shop-product-img">
+            <img src="/static/img/products/BobJeans.jpg" alt="" />
+          </div>
+          <div class="shop-product-meta">
+            <h4 class="product-name">The Ultimate Jeans Bob</h4>
+            <p class="product-price">$20</p>
+            <a href="#" class="add-to-cart"
+              ><i class="fas fa-shopping-cart"></i> add to Cart</a
+            >
+          </div>
         </div>
+        <div class="shop-product-item">
+          <div class="shop-product-img">
+            <img src="/static/img/products/Decobottle.jpg" alt="" />
+          </div>
+          <div class="shop-product-meta">
+            <h4 class="product-name">Decorative bottle</h4>
+            <p class="product-price">$70</p>
+            <a href="#" class="add-to-cart"
+              ><i class="fas fa-shopping-cart"></i> add to Cart</a
+            >
+          </div>
+        </div>
+        <div class="shop-product-item">
+          <div class="shop-product-img">
+            <img src="/static/img/products/comfyseat.jpg" alt="" />
+          </div>
+          <div class="shop-product-meta">
+            <h4 class="product-name">Seats</h4>
+            <p class="product-price">$100</p>
+            <a href="#" class="add-to-cart"
+              ><i class="fas fa-shopping-cart"></i> add to Cart</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+</div>
+
+<div class="pages-change">
+  <div class="container">
+    <div class="row">
+      <div class="pg-change-icon">
+        <a href="#" class="pg-change-link"> < </a>
+        <a href="#" class="pg-change-link"> 1 </a>
+        <a href="#" class="pg-change-link"> 2 </a>
+        <a href="#" class="pg-change-link"> ... </a>
+        <a href="#" class="pg-change-link"> > </a>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}

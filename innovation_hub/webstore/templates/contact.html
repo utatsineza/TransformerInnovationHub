@@ -1,46 +1,59 @@
 <!-- templates layout.html -->
-{% extends 'layout.html' %}
-{% block title %}Contact - Innovation Hub{% endblock %}
-
-{% block page_content %}
-    <!-- extends from other pages -->
-    <div class="contact-section">
-        <div class="container">
-            <div class="row contact-us">
-                <div class="reach-us">
-                    <h3>Have you any question ?</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iste, obcaecati adipisci dicta dolor similique eligendi ullam. Excepturi ducimus est nisi reprehenderit animi placeat minus fugit vero, in earum voluptatem.</p>
-                    <form action="">
-                        <input type="text" name="user-name" id="" placeholder="Name"><br>
-                        <input type="email" name="user-email" id="" placeholder="Email"><br>
-                        <input type="tel" name="phone" id="" placeholder="Phone"><br>
-                        <input type="text" name="subject" id="" placeholder="Subject"><br>
-                        <textarea cols="30" rows="10" name="message" placeholder="message"></textarea>
-                        <input type="submit" name="" id="submit-btn" value="submit"><br>
-                    </form>
-                </div>
-                <div class="address-info">
-                    <div class="adress-detail">
-                        <!-- icons have to be added soon -->
-                         <h3>Shop Address</h3>
-                         <p>424 St 5</p>
-                         <p>Masizi - Kigali</p>
-                         <p>Rwanda</p>
-                    </div>
-                    <div class="adress-detail">
-                        <h3>Shop Hours</h3>
-                        <p>MON - FRIDAY: 8 to 9 PM</p>
-                        <p>SAT: 9 to 13 PM</p>
-                    </div>
-                    <div class="adress-detail">
-                        <h3>Contact</h3>
-                        <p>Phone: +250791275915</p>
-                        <p>Email: support@transformerinnovationhub.com</p>
-                    </div>
-                </div>
-            </div>
+{% extends 'layout.html' %} {% block title %} Contact -Innovation
+Hub{%endblock%} {% block page_content %}
+<!-- extends from other pages -->
+<div class="contact-section">
+  <div class="container">
+    <div class="row contact-us">
+      <div class="reach-us">
+        <h3>Have you any question ?</h3>
+        <p>
+          We’d love to hear from you! Whether you have inquiries about our
+          initiatives, partnership opportunities, or how to get involved, feel
+          free to reach out. Our team is here to assist you and provide the
+          information you need
+        </p>
+        <form action="">
+          <input type="text" name="user-name" id="" placeholder="Name" /><br />
+          <input
+            type="email"
+            name="user-email"
+            id=""
+            placeholder="Email"
+          /><br />
+          <input type="tel" name="phone" id="" placeholder="Phone" /><br />
+          <input type="text" name="subject" id="" placeholder="Subject" /><br />
+          <textarea
+            cols="30"
+            rows="10"
+            name="message"
+            placeholder="message"
+          ></textarea>
+          <input type="submit" name="" id="submit-btn" value="submit" /><br />
+        </form>
+      </div>
+      <div class="address-info">
+        <div class="adress-detail">
+          <!-- icons have to be added soon -->
+          <h3>Shop Address</h3>
+          <p>424 St 5</p>
+          <p>Masizi - Kigali</p>
+          <p>Rwanda</p>
         </div>
+        <div class="adress-detail">
+          <h3>Shop Hours</h3>
+          <p>MON - FRIDAY: 8 to 9 PM</p>
+          <p>SAT: 9 to 13 PM</p>
+        </div>
+        <div class="adress-detail">
+          <h3>Contact</h3>
+          <p>Phone: +250791275915</p>
+          <p>Email: support@transformerinnovationhub.com</p>
+        </div>
+      </div>
     </div>
-    <!-- if we have time we will implement find our location --location sharing on google map -->
-    <!-- extends from other pages -->
+  </div>
+</div>
+<!-- if we have time we will implement find our location --location sharing on google map -->
+<!-- extends from other pages -->
 {% endblock %}

@@ -1,349 +1,425 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Transformer Innovation Hub</title>
-    <link rel="stylesheet" href="/static/styles/main.css">
-    <link rel="stylesheet" href="/static/styles/all.css">
-    <link rel="stylesheet" href="/static/styles/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/static/styles/main.css" />
+    <link rel="stylesheet" href="/static/styles/all.css" />
+    <link rel="stylesheet" href="/static/styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- header -->
-	<div class="top-header-area" id="sticker">
-		<div class="container">
-			<div class="row">
-				<div class="menu-content">
-					<div class="main-menu-wrap">
-						<!-- logo -->
-						<div class="site-logo">
-							<a href="index.html">
-								<img src="static/img/logo.png" alt="logo" width="100px">
-							</a>
-						</div>
-						<!-- logo -->
-						<!-- menu start -->
-						<nav class="main-menu">
-							<ul class="nav-link">
-                                <li><a href="{% url 'webstore:home' %}">Home</a></li>
-								<li><a href="{% url 'webstore:about' %}">About</a></li>
-								<li><a href="{% url 'webstore:shop' %}">Shop</a></li>
-								<li><a href="#blog">Blog</a></li>
-								<li><a href="{% url 'webstore:contact' %}">Contact</a></li>
-							</ul>
-                            <ul class="nav-icon">
-                                <li class="icons">
-									<div class="header-icons">
-										<a class="shopping-cart" href="{% url 'webstore:cart' %}"><i class="fas fa-shopping-cart"></i></a>
-										<a class="search-bar-icon" href="#"><i class="fas fa-search"></i></a>
-									</div>
-								</li>
-                            </ul>
-						</nav>
-						<!-- menu end -->
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="top-header-area" id="sticker">
+      <div class="container">
+        <div class="row">
+          <div class="menu-content">
+            <div class="main-menu-wrap">
+              <!-- logo -->
+              <div class="site-logo">
+                <a href="index.html">
+                  <img src="static/img/logo.png" alt="logo" width="100px" />
+                </a>
+              </div>
+              <!-- logo -->
+              <!-- menu start -->
+              <nav class="main-menu">
+                <ul class="nav-link">
+                  <li><a href="{% url 'webstore:home' %}">Home</a></li>
+                  <li><a href="{% url 'webstore:about' %}">About</a></li>
+                  <li><a href="{% url 'webstore:shop' %}">Shop</a></li>
+                  <li><a href="#blog">Blog</a></li>
+                  <li><a href="{% url 'webstore:contact' %}">Contact</a></li>
+                </ul>
+                <ul class="nav-icon">
+                  <li class="icons">
+                    <div class="header-icons">
+                      <a class="shopping-cart" href="{% url 'webstore:cart' %}"
+                        ><i class="fas fa-shopping-cart"></i
+                      ></a>
+                      <a class="search-bar-icon" href="#"
+                        ><i class="fas fa-search"></i
+                      ></a>
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+              <!-- menu end -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- end header -->
 
     <!-- hero-section -->
     <div class="hero-area hero-bg overlay">
-		<div class="container bg-container">
-			<div class="row bg-row">
-                <div class="text-container">
-                    <div class="hero-text">
-                        <div class="hero-text-tablecell">
-                            <p class="subtitle">ARTS & ARTISTS + SUSTAINABILITY</p>
-                            <h1>Transformer Innovation Hub</h1>
-                        </div>
-                    </div>
-                    <div class="hero-btns">
-                        <a href="shop.html" class="boxed-btn">Art Collection</a>
-                        <a href="contact.html" class="bordered-btn">Work With Us</a>
-                    </div>
-                </div>
-			</div>
-		</div>
-	</div>
+      <div class="container bg-container">
+        <div class="row bg-row">
+          <div class="text-container">
+            <div class="hero-text">
+              <div class="hero-text-tablecell">
+                <p class="subtitle">ARTS & ARTISTS + SUSTAINABILITY</p>
+                <h1>Transformer Innovation Hub</h1>
+              </div>
+            </div>
+            <div class="hero-btns">
+              <a href="shop.html" class="boxed-btn">Art Collection</a>
+              <a href="contact.html" class="bordered-btn">Work With Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- end hero -->
 
     <!-- services block -->
-     <div class="services">
-        <div class="container">
-            <div class="row">
-                <div class="service-display">
-                    <div class="service">
-                        <div class="service-icon">
-                            <img src="static/img/qaulity.png" alt="">
-                        </div>
-                        <div class="service-content">
-                            <h4>High Quality</h4>
-                            <p>crafter from top recycled materials</p>
-                        </div>
-                    </div>
-                    <div class="service">
-                        <div class="service-icon">
-                            <img src="static/img/shipping.png" alt="">
-                        </div>
-                        <div class="service-content">
-                            <h4>Free Shipping</h4>
-                            <p>Order over $50</p>
-                        </div>
-                    </div>
-                    <div class="service">
-                        <div class="service-icon">
-                            <img src="static/img/customer-support.png" alt="">
-                        </div>
-                        <div class="service-content">
-                            <h4>24/7 Support</h4>
-                            <p>Dedicated support</p>
-                        </div>
-                    </div>
-                </div>
+    <div class="services">
+      <div class="container">
+        <div class="row">
+          <div class="service-display">
+            <div class="service">
+              <div class="service-icon">
+                <img src="static/img/qaulity.png" alt="" />
+              </div>
+              <div class="service-content">
+                <h4>High Quality</h4>
+                <p>crafter from top recycled materials</p>
+              </div>
             </div>
+            <div class="service">
+              <div class="service-icon">
+                <img src="static/img/shipping.png" alt="" />
+              </div>
+              <div class="service-content">
+                <h4>Free Shipping</h4>
+                <p>Order over $50</p>
+              </div>
+            </div>
+            <div class="service">
+              <div class="service-icon">
+                <img src="static/img/customer-support.png" alt="" />
+              </div>
+              <div class="service-content">
+                <h4>24/7 Support</h4>
+                <p>Dedicated support</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- end services block -->
 
     <!-- product-preview -->
     <div class="products-preview"></div>
     <div class="products-display">
-        <div class="container">
-            <div class="row">
-                <div class="product-section-1">
-                    <div class="section-title">
-                        <h3><span>Our</span> Products</h3>
-                        <div class="under-line"></div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore beatae neque sed magni culpa, maxime molestiae reprehenderit minima.</p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="product-section-1">
+            <div class="section-title">
+              <h3><span>Our</span> Products</h3>
+              <div class="under-line"></div>
+              <p>
+                Explore a curated collection of artwork crafted from recycled
+                materials. Each piece tells a story of transformation—where
+                discarded waste becomes breathtaking creations. Support
+                eco-conscious artists and bring sustainability into your space
+                with one-of-a-kind masterpieces
+              </p>
             </div>
-            <div class="row">
-                <div class="product-block">
-                    <div class="product-item">
-                        <div class="product-image">
-                            <a href=""><img src="static/img/products/art-flower-glass.webp" alt=""></a>
-                        </div>
-                        <h3>Art1</h3>
-                        <p>Per Piece</p>
-                        <p class="product-price">$5</p>
-                        <a href="" class="cart-icon"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
-                    </div>
-                </div>
-                <div class="product-block">
-                    <div class="product-item">
-                        <div class="product-image">
-                            <a href=""><img src="static/img/products/art-necklace.webp" alt=""></a>
-                        </div>
-                        <h3>Necklace</h3>
-                        <p>Per Piece</p>
-                        <p class="product-price">$35</p>
-                        <a href="" class="cart-icon"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
-                    </div>
-                </div>
-                <div class="product-block">
-                    <div class="product-item">
-                        <div class="product-image">
-                            <a href=""><img src="static/img/products/bottle.jpg" alt=""></a>
-                        </div>
-                        <h3>Art3</h3>
-                        <p>Per Piece</p>
-                        <p class="product-price">$15</p>
-                        <a href="" class="cart-icon"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="show-more">
-                    <a href="#">show more</a>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="row">
+          <div class="product-block">
+            <div class="product-item">
+              <div class="product-image">
+                <a href=""
+                  ><img src="static/img/products/art-flower-glass.webp" alt=""
+                /></a>
+              </div>
+              <h3>Flowerpot</h3>
+              <p>Per Piece</p>
+              <p class="product-price">$5</p>
+              <a href="" class="cart-icon"
+                ><i class="fas fa-shopping-cart"></i> Add to Cart</a
+              >
+            </div>
+          </div>
+          <div class="product-block">
+            <div class="product-item">
+              <div class="product-image">
+                <a href=""
+                  ><img src="static/img/products/art-necklace.webp" alt=""
+                /></a>
+              </div>
+              <h3>Necklace</h3>
+              <p>Per Piece</p>
+              <p class="product-price">$15</p>
+              <a href="" class="cart-icon"
+                ><i class="fas fa-shopping-cart"></i> Add to Cart</a
+              >
+            </div>
+          </div>
+          <div class="product-block">
+            <div class="product-item">
+              <div class="product-image">
+                <a href=""
+                  ><img src="static/img/products/bottle.jpg" alt=""
+                /></a>
+              </div>
+              <h3>Decorative Bottle</h3>
+              <p>Per Piece</p>
+              <p class="product-price">$15</p>
+              <a href="" class="cart-icon"
+                ><i class="fas fa-shopping-cart"></i> Add to Cart</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="show-more">
+            <a href="#">show more</a>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- end product-preview -->
 
     <!-- material made from -->
     <div class="featured-category">
-        <div class="container made-from-block">
-            <div class="row">
-                <div class="featured-category-1">
-                    <div class="section-title">
-                        <h3 id="made-of-header">    Made <span> From... </span> </h3>
-                        <p>The best of the best</p>
-                        <div class="shop-now"><a href="">shop now</a></div>
-                    </div>
-                </div>
+      <div class="container made-from-block">
+        <div class="row">
+          <div class="featured-category-1">
+            <div class="section-title">
+              <h3 id="made-of-header">Made <span> From... </span></h3>
+              <p>The best of the best</p>
+              <div class="shop-now"><a href="">shop now</a></div>
             </div>
-            <div class="row">
-                <div class="category">
-                    <span>72+</span>
-                    <h3 class="made-of-text">Metal Crafts</h3>
-                </div>
-                <div class="category">
-                    <span>55+</span>
-                    <h3 class="made-of-text">Glass Arts</h3>
-                </div>
-                <div class="category">
-                    <span>25+</span>
-                    <h3 class="made-of-text">Plastics Crafts</h3>
-                </div>
-                <div class="category">
-                    <span class="made-of-text">15+</span>
-                    <h3>Wood Crafts</h3>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="row">
+          <div class="category">
+            <span>72+</span>
+            <h3 class="made-of-text">Metal Crafts</h3>
+          </div>
+          <div class="category">
+            <span>55+</span>
+            <h3 class="made-of-text">Glass Arts</h3>
+          </div>
+          <div class="category">
+            <span>25+</span>
+            <h3 class="made-of-text">Plastics Crafts</h3>
+          </div>
+          <div class="category">
+            <span class="made-of-text">15+</span>
+            <h3>Wood Crafts</h3>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- end materials made from -->
     <div id="blog"></div>
     <!-- blog preview -->
     <div class="blog-preview">
-        <div class="container">
-            <div class="row">
-                <div class="blog-section-1">
-                    <div class="section-title">
-                        <h3><span>Our</span> Blogs</h3>
-                        <div class="under-line"></div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore beatae neque sed magni culpa, </p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="blog-section-1">
+            <div class="section-title">
+              <h3><span>Our</span> Blog</h3>
+              <div class="under-line"></div>
+              <p>
+                Dive into the world of sustainable art, where creativity meets
+                environmental impact. Our blog features artist spotlights,
+                eco-friendly lifestyle tips, and insights into how recycled
+                materials are transformed into stunning masterpieces. Join the
+                movement and discover the beauty of art with a purpose!
+              </p>
             </div>
-            <div class="row">
-                <div class="blog-section">
-                    <div class="blog-content">
-                        <a href="">
-                            <div class="news-image">
-                                <img src="/static/img/blog-img/blog-image-1.jpg" alt="">
-                            </div>
-                        </a>
-                        <div class="blog-data-box">
-                            <h3><a href="">You will recycle and upcle for better world</a></h3>
-                            <p class="excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus enim voluptatum eius, et.</p>
-                            <a href="">read more ></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog-section">
-                    <div class="blog-content">
-                        <a href="">
-                            <div class="news-image">
-                                <img src="/static/img/blog-img/blog-2.jpg" alt="">
-                            </div>
-                        </a>
-                        <div class="blog-data-box">
-                            <h3><a href="">Why should we teach kids to recycle ?</a></h3>
-                            <p class="excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus enim voluptatum eius, et.</p>
-                            <a href="">read more ></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="blog-section">
-                    <div class="blog-content">
-                        <a href="">
-                            <div class="news-image">
-                                <img src="/static/img/blog-img/blog-1.webp" alt="">
-                            </div>
-                        </a>
-                        <div class="blog-data-box">
-                            <h3><a href="">You will recycle and upcle for better world</a></h3>
-                            <p class="excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus enim voluptatum eiuset.</p>
-                            <a href="">read more ></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="show-more">
-                    <a href="">More Articles</a>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="row">
+          <div class="blog-section">
+            <div class="blog-content">
+              <a href="">
+                <div class="news-image">
+                  <img src="/static/img/blog-img/blog-image-1.jpg" alt="" />
+                </div>
+              </a>
+              <div class="blog-data-box">
+                <h3>
+                  <a href="">You will recycle and upcyle for better world</a>
+                </h3>
+                <p class="excerpt">
+                  Through upcycling and recycling, we empower artists to
+                  transform discarded materials into stunning, sustainable
+                  masterpieces. Every creation is a step toward a...
+                </p>
+                <a href="">read more ></a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-section">
+            <div class="blog-content">
+              <a href="">
+                <div class="news-image">
+                  <img src="/static/img/blog-img/blog-2.jpg" alt="" />
+                </div>
+              </a>
+              <div class="blog-data-box">
+                <h3><a href="">Why should we teach kids to recycle ?</a></h3>
+                <p class="excerpt">
+                  Teaching children to recycle fosters a sense of responsibility
+                  for the planet. It helps them understand the value of
+                  resources through upcycling...
+                </p>
+                <a href="">read more ></a>
+              </div>
+            </div>
+          </div>
+          <div class="blog-section">
+            <div class="blog-content">
+              <a href="">
+                <div class="news-image">
+                  <img src="/static/img/blog-img/blog-1.webp" alt="" />
+                </div>
+              </a>
+              <div class="blog-data-box">
+                <h3>
+                  <a href="">You will recycle and upcle for better world</a>
+                </h3>
+                <p class="excerpt">
+                  Every discarded item has the potential for a second life.
+                  Through recycling, we turn waste into art, reducing
+                  environmental impact while fostering creativity...
+                </p>
+                <a href="">read more ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="show-more">
+            <a href="">More Articles</a>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- end articles - blog preview -->
 
     <!-- news-letter subscription -->
     <div class="news-letter">
-        <div class="container">
-            <div class="row">
-                <div class="news-letter-head">
-                    <h3>Subscribe to our <span>Newsletter</span></h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsa a incidunt vitae aut voluptas, odit praesentium minima in perspiciatis commodi ipsam enim eos necessitatibus? Commodi officiis nihil porro cupiditate.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="subscribe-form">
-                    <form action="" class="home-form">
-                        <input type="text" name="" id="email-field" placeholder="Enter email">
-                        <input type="submit" value="Subscribe" id="submit-button">
-                    </form>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="news-letter-head">
+            <h3>Subscribe to our <span>Newsletter</span></h3>
+            <p>
+              Join our community of eco-conscious art lovers! Get exclusive
+              updates on new sustainable artworks, artist stories, and tips on
+              living a greener life. Be part of the movement that transforms
+              waste into beauty.
+              <br />Sign up now and stay connected!
+            </p>
+          </div>
         </div>
+        <div class="row">
+          <div class="subscribe-form">
+            <form action="" class="home-form">
+              <input
+                type="text"
+                name=""
+                id="email-field"
+                placeholder="Enter email"
+              />
+              <input type="submit" value="Subscribe" id="submit-button" />
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- end news-letter -->
 
-
     <!-- footer -->
     <footer class="main-footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-tabs">
-                    <div class="upper-footer">
-                        <div class="footer-section">
-                            <h2 class="footer-heading">About <span>Us</span></h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus nostrum repellat placeat. Libero, voluptates. Architecto nulla repellendus quisquam ducimus quae laudantium maxime alias, quos hic eveniet! Quos atque dolorem labore?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti molestiae adipisci iste nemo error enim exercitationem, </p>
-                        </div>
-                        <div class="footer-section">
-                            <h2 class="footer-heading">Quick Links</h2>
-                            <ul>
-                                <li><span>> </span><a href="home.html">Home</a></li>
-                                <li><span>> </span><a href="shop.html">Shop</a></li>
-                                <li><span>> </span><a href="about.html">About us</a></li>
-                                <li><span>> </span><a href="home.html#blog">Blog</a></li>
-                                <li><span>> </span><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-section">
-                            <h2 class="footer-heading">Get in Touch</h2>
-                            <ul>
-                                <li>Email: support@recycleart.com</li>
-                                <li>Phone: +250 791275915</li>
-                                <li>Location: Masoro, Kigali - Rwanda</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="copyright">
-                        <div><p> &copy; 2025 <span>Transformer Innovation Hub</span> | All rights reserved</p></div>
-                        <div class="social-icon">
-                            <ul>
-                                <li>facebook</li>
-                                <li>Twitter</li>
-                                <li>Instagram</li>
-                                <li>LinkedIn</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="footer-tabs">
+            <div class="upper-footer">
+              <div class="footer-section">
+                <h2 class="footer-heading">About <span>Us</span></h2>
+                <p>
+                  We are a platform that bridges the gap between pollution and
+                  art, empowering artists who transform recycled materials into
+                  breathtaking masterpieces. Our mission is to give these
+                  creators visibility while promoting sustainable living through
+                  ethical commerce. Join us in turning waste into wonder—one
+                  artwork at a time.
+                </p>
+              </div>
+              <div class="footer-section">
+                <h2 class="footer-heading">Quick Links</h2>
+                <ul>
+                  <li><span>> </span><a href="home.html">Home</a></li>
+                  <li><span>> </span><a href="shop.html">Shop</a></li>
+                  <li><span>> </span><a href="about.html">About us</a></li>
+                  <li><span>> </span><a href="home.html#blog">Blog</a></li>
+                  <li><span>> </span><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+              <div class="footer-section">
+                <h2 class="footer-heading">Get in Touch</h2>
+                <ul>
+                  <li>Email: support@recycleart.com</li>
+                  <li>Phone: +250 791275915</li>
+                  <li>Location: Masoro, Kigali - Rwanda</li>
+                </ul>
+              </div>
             </div>
+            <div class="copyright">
+              <div>
+                <p>
+                  &copy; 2025 <span>Transformer Innovation Hub</span> | All
+                  rights reserved
+                </p>
+              </div>
+              <div class="social-icon">
+                <ul>
+                  <li>facebook</li>
+                  <li>Twitter</li>
+                  <li>Instagram</li>
+                  <li>LinkedIn</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
     <!-- end footer -->
-     <!-- script -->
-     <script>
-        window.addEventListener("scroll", function() {
-            let navbar = document.querySelector(".top-header-area");
-            if (window.scrollY > 30) {  // Adjust this value based on when you want the effect to happen
-                navbar.style.backgroundColor = "rgba(7, 33, 46, 0.98)";  // Dark transparent background
-            } else {
-                navbar.style.backgroundColor = "transparent";
-            }
-        });
+    <!-- script -->
+    <script>
+      window.addEventListener("scroll", function () {
+        let navbar = document.querySelector(".top-header-area");
+        if (window.scrollY > 30) {
+          // Adjust this value based on when you want the effect to happen
+          navbar.style.backgroundColor = "rgba(7, 33, 46, 0.98)"; // Dark transparent background
+        } else {
+          navbar.style.backgroundColor = "transparent";
+        }
+      });
     </script>
-</body>
+  </body>
 </html>
