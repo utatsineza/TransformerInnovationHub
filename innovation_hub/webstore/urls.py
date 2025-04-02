@@ -7,12 +7,12 @@ urlpatterns = [
     path("home", views.home, name="home"),
     path("shop", views.store, name="shop"),
     path("product", views.product, name="product"),
+    path("checkout", views.checkout, name="checkout"),
     path("cart", views.cart, name="cart"),
     path("blog", views.blog, name="blog"),
     path("about", views.about, name="about"),
     path("contact", views.contact, name="contact"),
-    path("login", views.login, name="login"),
-    path("signup", views.signup, name="signup"),
-    path("checkout", views.checkout, name="checkout"),
-    path("layout", views.layout, name="layout")
+    path("login", views.login_user, name="login_user"),
+    path("logout", views.logout_user, name="logout_user"),
+    path("register", views.register_user, name="register_user"),
 ]
