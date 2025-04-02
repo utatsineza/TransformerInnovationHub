@@ -18,8 +18,9 @@ def store(request):
     return render(request, "shop.html", {"products": products})
 
 
-def product(request):
-    return render(request, "single-product.html")
+def product(request, pk):
+    product = Product.objects.get(id=pk)
+    return render(request, "single-product.html", {'product': product})
 
 
 def cart(request):
@@ -83,3 +84,4 @@ def register_user(request):
             # print(form.errors)
     else:
         return render(request, "register.html", {'form': form})
+
