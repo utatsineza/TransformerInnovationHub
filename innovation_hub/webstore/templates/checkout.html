@@ -1,83 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Checkout Page</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h2>Checkout</h2>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Out</title>
+    <link rel="stylesheet" href="/static/styles/main.css">
+    <link rel="stylesheet" href="/static/styles/all.css">
+    <link rel="stylesheet" href="/static/styles/checkout.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- extends from other products -->
+    <div class="check-out-section">
+        <div class="container">
+            <div class="row">
+                <div class="billing-address">
+                    <h4>Billing & Shipping Address</h4>
+                    <form action="">
+                        <div class="billing-address-box">
+                            <input type="text" name="buyer-name" id="" placeholder="Name"><br>
+                            <input type="email" name="buyer-email" id="" placeholder="Email"><br>
+                            <input type="text" name="shipping-address" id="" placeholder="Adress"><br>
+                            <input type="tel" name="buyer-phone" id="" placeholder="Phone"><br>
+                            <textarea rows="3" cols="10" placeholder="Something Else ?"></textarea><br>
 
-      <form id="checkout-form">
-        <div>
-          <h3>Billing Details</h3>
-          <input type="text" placeholder="Full Name" required />
-          <input type="email" placeholder="Email Address" required />
-          <input type="text" placeholder="Address" required />
-          <input type="text" placeholder="City" required />
-          <input type="text" placeholder="Phone Number" required />
+                        </div>
+                        <input type="submit" name="" id="submit-btn" value="Place Order"><br>
+                    </form>
+                </div>
+                <div class="order-details">
+                    <table>
+                        <tr>
+                            <th>Order Details</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>item 1</td>
+                            <td>$5.00</td>
+                        </tr>
+                        <tr>
+                            <td>item 2</td>
+                            <td>$10.00</td>
+                        </tr>
+                        <tr>
+                            <td>item 3</td>
+                            <td>$15.00</td>
+                        </tr>
+                        <tr>
+                            <td>Shipping</td>
+                            <td>$5.00</td>
+                        </tr>
+                        <tr>
+                            <td>Tax</td>
+                            <td>$10.05</td>
+                        </tr>
+                        <tr>
+                            <td>Total</td>
+                            <td>$50</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
-
-        <div>
-          <h3>Shipping Method</h3>
-          <label for="shipping-method">Choose a shipping method:</label>
-          <select id="shipping-method" required>
-            <option value="standard">Standard Shipping - $5.00</option>
-            <option value="express">Express Shipping - $15.00</option>
-            <option value="pickup">Store Pickup - Free</option>
-          </select>
-        </div>
-
-        <div>
-          <h3>Payment Method</h3>
-          <label for="payment-method">Choose a payment method:</label>
-          <select id="payment-method" required>
-            <option value="credit_card">Credit Card</option>
-            <option value="paypal">PayPal</option>
-          </select>
-        </div>
-
-        <div>
-          <h3>Order Summary</h3>
-          <div>
-            <span>Subtotal:</span>
-            <span id="subtotal">$50.00</span>
-          </div>
-          <div>
-            <span>Shipping:</span>
-            <span id="shipping-cost">$5.00</span>
-          </div>
-          <div>
-            <span>Total:</span>
-            <span id="total-cost">$55.00</span>
-          </div>
-        </div>
-
-        <button type="submit">Place Order</button>
-      </form>
-
-      <div class="action-buttons">
-        <button onclick="window.location.href='index.html'" class="back-button">
-          Back to Home
-        </button>
-        <button
-          onclick="window.location.href='contact.html'"
-          class="support-button"
-        >
-          Contact Support
-        </button>
-      </div>
     </div>
-
-    <script>
-      document
-        .getElementById("checkout-form")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
-          alert("Order placed successfully!");
-        });
-    </script>
-  </body>
+</body>
 </html>

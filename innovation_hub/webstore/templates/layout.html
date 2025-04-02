@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Transformer Innovation Hub{% endblock %}</title>
+    <link rel="stylesheet" href="/static/styles/main.css">
+    <link rel="stylesheet" href="/static/styles/all.css">
+    <link rel="stylesheet" href="/static/styles/about-styles.css">
+    <link rel="stylesheet" href="/static/styles/cart.css">
+    <!-- <link rel="stylesheet" href="/static/styles/checkout.css"> -->
+    <link rel="stylesheet" href="/static/styles/contact.css">
+    <link rel="stylesheet" href="/static/styles/shop.css">
+    <link rel="stylesheet" href="/static/styles/single-product.css">
+    <link rel="stylesheet" href="/static/styles/layout-styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+	<div class="top-header-area" id="sticker">
+		<div class="container">
+			<div class="row">
+				<div class="menu-content">
+					<div class="main-menu-wrap">
+						<!-- logo -->
+						<div class="site-logo">
+							<a href="{% url 'webstore:home' %}">
+								<img src="static/img/logo.png" alt="logo" width="100px">
+							</a>
+						</div>
+						<!-- logo -->
+						<!-- menu start -->
+						<nav class="main-menu">
+							<ul class="nav-link">
+								<li><a href="{% url 'webstore:home' %}">Home</a></li>
+								<li><a href="{% url 'webstore:about' %}">About</a></li>
+								<li><a href="{% url 'webstore:shop' %}">Shop</a></li>
+								<li><a href="{% url 'webstore:home' %}#blog">Blog</a></li>
+								<li><a href="{% url 'webstore:contact' %}">Contact</a></li>
+							</ul>
+                            <ul class="nav-icon">
+                                <li class="icons">
+									<div class="header-icons">
+										<a class="shopping-cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+										<a class="search-bar-icon" href="#"><i class="fas fa-search"></i></a>
+									</div>
+								</li>
+                            </ul>
+						</nav>
+						<!-- menu end -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- end header -->
+
+    <!-- hero -->
+    <div class="hero-area hero-bg overlay">
+		<div class="container bg-container">
+			<div class="row bg-row">
+                <div class="text-container">
+                    <div class="hero-text">
+                        <div class="hero-text-tablecell">
+                            <p class="subtitle">SUBTITLE</p>
+                            <h1>Page</h1>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</div>
+    <!-- end- hero -->
+
+    <!-- page cntent -->
+    {% block page_content%}
+    {% endblock %}
+    <!-- end page content -->
+
+    <!-- news-letter subscription -->
+    <div class="news-letter">
+        <div class="container">
+            <div class="row">
+                <div class="news-letter-head">
+                    <h3>Subscribe To our <span>Newsletter</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsa a incidunt vitae aut voluptas, odit praesentium minima in perspiciatis commodi ipsam enim eos necessitatibus? Commodi officiis nihil porro cupiditate.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="subscribe-form">
+                    <form action="" class="home-form">
+                        <input type="text" name="" id="email-field" placeholder="Enter email">
+                        <input type="submit" value="Subscribe" id="submit-button">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end news-letter -->
+
+    <!-- footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-tabs">
+                    <div class="upper-footer">
+                        <div class="footer-section">
+                            <h2 class="footer-heading">About <span>Us</span></h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus nostrum repellat placeat. Libero, voluptates. Architecto nulla repellendus quisquam ducimus quae laudantium maxime alias, quos hic eveniet! Quos atque dolorem labore?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti molestiae adipisci iste nemo error enim exercitationem, </p>
+                        </div>
+                        <div class="footer-section">
+                            <h2 class="footer-heading">Quick Links</h2>
+                            <ul>
+                                <li><span>> </span><a href="{% url 'webstore:home' %}">Home</a></li>
+                                <li><span>> </span><a href="{% url 'webstore:shop' %}">Shop</a></li>
+                                <li><span>> </span><a href="{% url 'webstore:about' %}">About us</a></li>
+                                <li><span>> </span><a href="{% url 'webstore:home' %}#blog">Blog</a></li>
+                                <li><span>> </span><a href="{% url 'webstore:contact' %}">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-section">
+                            <h2 class="footer-heading">Get in Touch</h2>
+                            <ul>
+                                <li>Email: support@recycleart.com</li>
+                                <li>Phone: +250 791275915</li>
+                                <li>Location: Masoro, Kigali - Rwanda</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <div><p> &copy; 2025 <span>Transformer Innovation Hub</span> | All rights reserved</p></div>
+                        <div class="social-icon">
+                            <ul>
+                                <li>facebook</li>
+                                <li>Twitter</li>
+                                <li>Instagram</li>
+                                <li>LinkedIn</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+     <!-- script -->
+     <script>
+        window.addEventListener("scroll", function() {
+            let navbar = document.querySelector(".top-header-area");
+            if (window.scrollY > 30) {  // Adjust this value based on when you want the effect to happen
+                navbar.style.backgroundColor = "rgba(7, 33, 46, 0.98)";  // Dark transparent background
+            } else {
+                navbar.style.backgroundColor = "transparent";
+            }
+        });
+    </script>
+</body>
+</html>

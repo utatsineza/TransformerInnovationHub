@@ -1,57 +1,46 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="{% static 'styles/contact.css' %}">
-</head>
-<body>
-    <section class="contact-section">
-        <h2>Get In Touch With Us</h2>
-        <p class="subtext">For More Information About Our Product & Services. Please Feel Free To Drop Us
-        An Email. Our Staff Always Be There To Help You Out. Do Not Hesitate!</p>
+<!-- templates layout.html -->
+{% extends 'layout.html' %}
+{% block title %}Contact - Innovation Hub{% endblock %}
 
-        <div class="contact-container">
-            <div class="contact-info">
-                <div class="info-box">
-                    <span class="icon">&#128205;</span>
-                    <h3>Address</h3>
-                    <p>Matwari, Masoro, Kigali, Rwanda.</p>
+{% block page_content %}
+    <!-- extends from other pages -->
+    <div class="contact-section">
+        <div class="container">
+            <div class="row contact-us">
+                <div class="reach-us">
+                    <h3>Have you any question ?</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iste, obcaecati adipisci dicta dolor similique eligendi ullam. Excepturi ducimus est nisi reprehenderit animi placeat minus fugit vero, in earum voluptatem.</p>
+                    <form action="">
+                        <input type="text" name="user-name" id="" placeholder="Name"><br>
+                        <input type="email" name="user-email" id="" placeholder="Email"><br>
+                        <input type="tel" name="phone" id="" placeholder="Phone"><br>
+                        <input type="text" name="subject" id="" placeholder="Subject"><br>
+                        <textarea cols="30" rows="10" name="message" placeholder="message"></textarea>
+                        <input type="submit" name="" id="submit-btn" value="submit"><br>
+                    </form>
                 </div>
-                <div class="info-box">
-                    <span class="icon">&#128222;</span>
-                    <h3>Phone</h3>
-                    <p>Mobile: +(250) 79-865-3539</p>
-                    <p>Hotline: +(84) 456-6789</p>
+                <div class="address-info">
+                    <div class="adress-detail">
+                        <!-- icons have to be added soon -->
+                         <h3>Shop Address</h3>
+                         <p>424 St 5</p>
+                         <p>Masizi - Kigali</p>
+                         <p>Rwanda</p>
+                    </div>
+                    <div class="adress-detail">
+                        <h3>Shop Hours</h3>
+                        <p>MON - FRIDAY: 8 to 9 PM</p>
+                        <p>SAT: 9 to 13 PM</p>
+                    </div>
+                    <div class="adress-detail">
+                        <h3>Contact</h3>
+                        <p>Phone: +250791275915</p>
+                        <p>Email: support@transformerinnovationhub.com</p>
+                    </div>
                 </div>
-                <div class="info-box">
-                    <span class="icon">&#128339;</span>
-                    <h3>Working Time</h3>
-                    <p>Monday-Friday: 9:00 - 22:00</p>
-                    <p>Saturday-Sunday: 9:00 - 21:00</p>
-                </div>
-            </div>
-
-            <div class="contact-form">
-                <form action="#" method="POST">
-                    <label for="name">Your name</label>
-                    <input type="text" id="name" name="name" placeholder="Abc" required>
-
-                    <label for="email">Email address</label>
-                    <input type="email" id="email" name="email" placeholder="Abc@def.com" required>
-
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" placeholder="This is an optional">
-
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="4" placeholder="Hi! I'd like to ask about" required></textarea>
-
-                    <button type="submit">Submit</button>
-                </form>
             </div>
         </div>
-    </section>
-</body>
-</html>
+    </div>
+    <!-- if we have time we will implement find our location --location sharing on google map -->
+    <!-- extends from other pages -->
+{% endblock %}

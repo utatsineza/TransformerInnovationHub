@@ -8,7 +8,7 @@ def home(request):
 
 
 def store(request):
-    return render(request, "store.html")
+    return render(request, "shop.html")
 
 
 def product(request):
@@ -16,11 +16,11 @@ def product(request):
 
 
 def cart(request):
-    return render(request, "cart.hml")
+    return render(request, "cart.html")
 
 
 def blog(request):
-    return render(request, "blog.html")
+    return render(request, "home.html")
 
 
 def about(request):
@@ -35,8 +35,11 @@ def checkout(request):
     return render(request, "checkout.html")
 
 def login(request):
-    return render(request, "login.html")
+    return render(request, "sign-in.html")
 
 
 def signup(request):
     return render(request, "sign-up.html")
+
+def layout(request):
+    return render(request, 'layout.html')

@@ -1,343 +1,349 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home homePage</title>
-    <link rel="stylesheet" href="{% static 'styles/home.css' %}" />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <nav>
-          <div class="logo">
-            <img src="logo.png" alt="" />
-          </div>
-          <ul>
-            <li><a href="{% url 'webstore:home' %}">Home </a></li>
-            <li><a href="{% url 'webstore:store' %}">Shop</a></li>
-            <li><a href="{% url 'webstore:blog' %}">Blog</a></li>
-            <li><a href="{% url 'webstore:about' %}">About</a></li>
-            <li><a href="{% url 'webstore:contact' %}">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="icons">
-          <a class="fas fa-search" id="search-btn" href="#"></a>
-          <a class="fas fa-shopping-cart" id="cart-btn" href="{% url 'webstore:cart' %}"></a>
-          <a class="fas fa-solid fa-user" href="#"></a>
-        </div>
-      </div>
-    </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformer Innovation Hub</title>
+    <link rel="stylesheet" href="/static/styles/main.css">
+    <link rel="stylesheet" href="/static/styles/all.css">
+    <link rel="stylesheet" href="/static/styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- header -->
+	<div class="top-header-area" id="sticker">
+		<div class="container">
+			<div class="row">
+				<div class="menu-content">
+					<div class="main-menu-wrap">
+						<!-- logo -->
+						<div class="site-logo">
+							<a href="index.html">
+								<img src="static/img/logo.png" alt="logo" width="100px">
+							</a>
+						</div>
+						<!-- logo -->
+						<!-- menu start -->
+						<nav class="main-menu">
+							<ul class="nav-link">
+                                <li><a href="{% url 'webstore:home' %}">Home</a></li>
+								<li><a href="{% url 'webstore:about' %}">About</a></li>
+								<li><a href="{% url 'webstore:shop' %}">Shop</a></li>
+								<li><a href="#blog">Blog</a></li>
+								<li><a href="{% url 'webstore:contact' %}">Contact</a></li>
+							</ul>
+                            <ul class="nav-icon">
+                                <li class="icons">
+									<div class="header-icons">
+										<a class="shopping-cart" href="{% url 'webstore:cart' %}"><i class="fas fa-shopping-cart"></i></a>
+										<a class="search-bar-icon" href="#"><i class="fas fa-search"></i></a>
+									</div>
+								</li>
+                            </ul>
+						</nav>
+						<!-- menu end -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- end header -->
 
-    <!-- Hero -->
+    <!-- hero-section -->
+    <div class="hero-area hero-bg overlay">
+		<div class="container bg-container">
+			<div class="row bg-row">
+                <div class="text-container">
+                    <div class="hero-text">
+                        <div class="hero-text-tablecell">
+                            <p class="subtitle">ARTS & ARTISTS + SUSTAINABILITY</p>
+                            <h1>Transformer Innovation Hub</h1>
+                        </div>
+                    </div>
+                    <div class="hero-btns">
+                        <a href="shop.html" class="boxed-btn">Art Collection</a>
+                        <a href="contact.html" class="bordered-btn">Work With Us</a>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</div>
+    <!-- end hero -->
 
-
-
-
-
-
-
-    <section id="hero">
-
-      <div class="hero container">
-        <div class="hero-inside">
-          <h1>Tranformer <br>
-            Innovation Hub</h1>
-          <p>When Art Meets Innovation</p>
-          <button><a href="">SHOP NOW</a></button>
-
-        </div>
-      </div>
-    </section>
-
-
-
-    <!-- Banner -->
-
-    <section id="banner" >
-
-      <div class="bannercontainer">
-
-        <div class="banner-in">
-          <div class="iconn">
-            <i class="fas fa-headset"></i>
-
-          </div>
-          <div class="text">
-            <h5>Shop With an Expert</h5>
-            <p>
-              Get the best advice from our experts
-            </p>
-          </div>
-        </div>
-
-        <div class="banner-in">
-          <div class="iconn">
-            <i class="fas fa-truck"></i>
-
-          </div>
-          <div class="text">
-            <h5>Free Shipping</h5>
-            <p>
-              Free shipping on all orders over $100
-            </p>
-          </div>
-        </div>
-
-        <div class="banner-in">
-          <div class="iconn">
-            <i class="fas fa-shield"></i>
-          </div>
-          <div class="text">
-            <h5>100% Aunthentic</h5>
-            <p>
-              We only sell authentic products
-            </p>
-          </div>
-        </div>
-    </section>
-
-
-
-    <!-- Featured Categories -->
-
-
-
-
-
-  <div class="featured-categories">
-      <div class="title">
-        <h2>Featured Categories</h2>
-      </div>
-
-      <div class="categories">
-
-        <div class="categoyyBox">
-
-          <div class="categoryimage">
-          <img src="./Images/wood.jpg">
-
-          <div class="titre">
-          <h3>Wood</h3>
-          </div>
-        </div>
-
-
-      </div>
-
-
-
-      <div class="categoyyBox">
-
-        <div class="categoryimage">
-          <img src="./Images/plastic.jpg">
-        </div>
-
-        <div class="titre">
-          <h3>Plastic</h3>
-        </div>
-      </div>
-
-      <div class="categoyyBox">
-
-        <div class="categoryimage">
-          <img src="./Images/metal.jpg">
-        </div>
-
-        <div class="titre">
-          <h3>Metals</h3>
-        </div>
-
-
-      </div>
-
-      <div class="categoyyBox">
-
-        <div class="categoryimage">
-          <img src="./Images/glass.jpg">
-        </div>
-
-        <div class="titre">
-          <h3>Glass</h3>
-        </div>
-      </div>
-
-    </div>
-
-
-    <div class="artCollection">
-
-      <div class="title2">
-        <h2>Discover our New Artists Collection</h2>
-      </div>
-
-
-    <div class="pro-container">
-
-      <div class="product-box">
-
-        <div class="product-image-container">
-            <img src="Images/item1.jpg" alt="Product Image" class="product-image">
-        </div>
-
-        <div class="product-info">
-            <h3 class="product-name">Carton Portrait</h3>
-            <div class="rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-
+    <!-- services block -->
+     <div class="services">
+        <div class="container">
+            <div class="row">
+                <div class="service-display">
+                    <div class="service">
+                        <div class="service-icon">
+                            <img src="static/img/qaulity.png" alt="">
+                        </div>
+                        <div class="service-content">
+                            <h4>High Quality</h4>
+                            <p>crafter from top recycled materials</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon">
+                            <img src="static/img/shipping.png" alt="">
+                        </div>
+                        <div class="service-content">
+                            <h4>Free Shipping</h4>
+                            <p>Order over $50</p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="service-icon">
+                            <img src="static/img/customer-support.png" alt="">
+                        </div>
+                        <div class="service-content">
+                            <h4>24/7 Support</h4>
+                            <p>Dedicated support</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <p class="price">$998.99</p>
-            <a href="../Store/store.html" class="cart-icon">
-                <i class="fas fa-shopping-cart"></i>
-            </a>
-        </div>
-      </div>
-
-
-      <div class="product-box">
-
-        <div class="product-image-container">
-            <img src="Images/item5.jpg" alt="Product Image" class="product-image">
-        </div>
-
-        <div class="product-info">
-            <h3 class="product-name">Wine bottle</h3>
-            <div class="rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-
-            </div>
-
-            <p class="price">$99.99</p>
-            <a href="{% url 'webstore:store' %}" class="cart-icon">
-                <i class="fas fa-shopping-cart"></i>
-            </a>
-        </div>
-      </div>
-
-
-      <div class="product-box">
-
-        <div class="product-image-container">
-            <img src="Images/item2.jpg" alt="Product Image" class="product-image">
-        </div>
-
-        <div class="product-info">
-            <h3 class="product-name">Hero</h3>
-
-            <div class="rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-
-            </div>
-
-            <p class="price">$589.99</p>
-            <a href="{% url 'webstore:store' %}" class="cart-icon">
-                <i class="fas fa-shopping-cart"></i>
-            </a>
-        </div>
-      </div>
-
-      <div class="product-box">
-
-        <div class="product-image-container">
-            <img src="Images/item3.jpg" alt="Product Image" class="product-image">
-        </div>
-
-        <div class="product-info">
-            <h3 class="product-name">Inner Side</h3>
-            <div class="rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-
-            </div>
-
-            <p class="price">$959.99</p>
-            <a href="{% url 'webstore:store' %}" class="cart-icon">
-                <i class="fas fa-shopping-cart"></i>
-            </a>
-        </div>
-      </div>
-
-      <div class="product-box">
-
-        <div class="product-image-container">
-            <img src="Images/item4.jpg" alt="Product Image" class="product-image">
-        </div>
-
-        <div class="product-info">
-            <h3 class="product-name">The face of the World</h3>
-
-            <div class="rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-
-            </div>
-
-            <p class="price">$998.99</p>
-            <a href="{% url 'webstore:store' %}" class="cart-icon">
-                <i class="fas fa-shopping-cart"></i>
-            </a>
-        </div>
-
-
-      </div>
-
-    </div>
-
-    <button class="show-more">Show More</button>
-
-    </div>
-
-    <div class="newsletter">
-        <h2>Subscribe to Our Newsletter</h2>
-        <p>Stay updated with our latest news and offers!</p>
-        <input type="email" placeholder="Enter your email" required>
-        <button>Subscribe</button>
-    </div>
-
-
-    <div class="footer">
-    <div class="footer-content">
-        <p>&copy; 2025 Transformer Innovation Hub. All rights reserved.</p>
-        <div class="footer-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="{% url 'webstore:contact' %}">Contact Us</a>
-        </div>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/share/18xL1zmd9h/
-"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.instagram.com/transformer_innovation_hub?igsh=MW50djNybmE0ZGo0bQ== "><i class="fab fa-linkedin"></i></a>
         </div>
     </div>
-</div>
+    <!-- end services block -->
+
+    <!-- product-preview -->
+    <div class="products-preview"></div>
+    <div class="products-display">
+        <div class="container">
+            <div class="row">
+                <div class="product-section-1">
+                    <div class="section-title">
+                        <h3><span>Our</span> Products</h3>
+                        <div class="under-line"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore beatae neque sed magni culpa, maxime molestiae reprehenderit minima.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="product-block">
+                    <div class="product-item">
+                        <div class="product-image">
+                            <a href=""><img src="static/img/products/art-flower-glass.webp" alt=""></a>
+                        </div>
+                        <h3>Art1</h3>
+                        <p>Per Piece</p>
+                        <p class="product-price">$5</p>
+                        <a href="" class="cart-icon"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product-block">
+                    <div class="product-item">
+                        <div class="product-image">
+                            <a href=""><img src="static/img/products/art-necklace.webp" alt=""></a>
+                        </div>
+                        <h3>Necklace</h3>
+                        <p>Per Piece</p>
+                        <p class="product-price">$35</p>
+                        <a href="" class="cart-icon"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product-block">
+                    <div class="product-item">
+                        <div class="product-image">
+                            <a href=""><img src="static/img/products/bottle.jpg" alt=""></a>
+                        </div>
+                        <h3>Art3</h3>
+                        <p>Per Piece</p>
+                        <p class="product-price">$15</p>
+                        <a href="" class="cart-icon"><i class="fas fa-shopping-cart"></i> Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="show-more">
+                    <a href="#">show more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end product-preview -->
+
+    <!-- material made from -->
+    <div class="featured-category">
+        <div class="container made-from-block">
+            <div class="row">
+                <div class="featured-category-1">
+                    <div class="section-title">
+                        <h3 id="made-of-header">    Made <span> From... </span> </h3>
+                        <p>The best of the best</p>
+                        <div class="shop-now"><a href="">shop now</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="category">
+                    <span>72+</span>
+                    <h3 class="made-of-text">Metal Crafts</h3>
+                </div>
+                <div class="category">
+                    <span>55+</span>
+                    <h3 class="made-of-text">Glass Arts</h3>
+                </div>
+                <div class="category">
+                    <span>25+</span>
+                    <h3 class="made-of-text">Plastics Crafts</h3>
+                </div>
+                <div class="category">
+                    <span class="made-of-text">15+</span>
+                    <h3>Wood Crafts</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end materials made from -->
+    <div id="blog"></div>
+    <!-- blog preview -->
+    <div class="blog-preview">
+        <div class="container">
+            <div class="row">
+                <div class="blog-section-1">
+                    <div class="section-title">
+                        <h3><span>Our</span> Blogs</h3>
+                        <div class="under-line"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore beatae neque sed magni culpa, </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="blog-section">
+                    <div class="blog-content">
+                        <a href="">
+                            <div class="news-image">
+                                <img src="/static/img/blog-img/blog-image-1.jpg" alt="">
+                            </div>
+                        </a>
+                        <div class="blog-data-box">
+                            <h3><a href="">You will recycle and upcle for better world</a></h3>
+                            <p class="excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus enim voluptatum eius, et.</p>
+                            <a href="">read more ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-section">
+                    <div class="blog-content">
+                        <a href="">
+                            <div class="news-image">
+                                <img src="/static/img/blog-img/blog-2.jpg" alt="">
+                            </div>
+                        </a>
+                        <div class="blog-data-box">
+                            <h3><a href="">Why should we teach kids to recycle ?</a></h3>
+                            <p class="excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus enim voluptatum eius, et.</p>
+                            <a href="">read more ></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-section">
+                    <div class="blog-content">
+                        <a href="">
+                            <div class="news-image">
+                                <img src="/static/img/blog-img/blog-1.webp" alt="">
+                            </div>
+                        </a>
+                        <div class="blog-data-box">
+                            <h3><a href="">You will recycle and upcle for better world</a></h3>
+                            <p class="excerpt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus enim voluptatum eiuset.</p>
+                            <a href="">read more ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="show-more">
+                    <a href="">More Articles</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end articles - blog preview -->
+
+    <!-- news-letter subscription -->
+    <div class="news-letter">
+        <div class="container">
+            <div class="row">
+                <div class="news-letter-head">
+                    <h3>Subscribe to our <span>Newsletter</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsa a incidunt vitae aut voluptas, odit praesentium minima in perspiciatis commodi ipsam enim eos necessitatibus? Commodi officiis nihil porro cupiditate.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="subscribe-form">
+                    <form action="" class="home-form">
+                        <input type="text" name="" id="email-field" placeholder="Enter email">
+                        <input type="submit" value="Subscribe" id="submit-button">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end news-letter -->
 
 
-
-  </body>
+    <!-- footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-tabs">
+                    <div class="upper-footer">
+                        <div class="footer-section">
+                            <h2 class="footer-heading">About <span>Us</span></h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus nostrum repellat placeat. Libero, voluptates. Architecto nulla repellendus quisquam ducimus quae laudantium maxime alias, quos hic eveniet! Quos atque dolorem labore?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti molestiae adipisci iste nemo error enim exercitationem, </p>
+                        </div>
+                        <div class="footer-section">
+                            <h2 class="footer-heading">Quick Links</h2>
+                            <ul>
+                                <li><span>> </span><a href="home.html">Home</a></li>
+                                <li><span>> </span><a href="shop.html">Shop</a></li>
+                                <li><span>> </span><a href="about.html">About us</a></li>
+                                <li><span>> </span><a href="home.html#blog">Blog</a></li>
+                                <li><span>> </span><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-section">
+                            <h2 class="footer-heading">Get in Touch</h2>
+                            <ul>
+                                <li>Email: support@recycleart.com</li>
+                                <li>Phone: +250 791275915</li>
+                                <li>Location: Masoro, Kigali - Rwanda</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <div><p> &copy; 2025 <span>Transformer Innovation Hub</span> | All rights reserved</p></div>
+                        <div class="social-icon">
+                            <ul>
+                                <li>facebook</li>
+                                <li>Twitter</li>
+                                <li>Instagram</li>
+                                <li>LinkedIn</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+     <!-- script -->
+     <script>
+        window.addEventListener("scroll", function() {
+            let navbar = document.querySelector(".top-header-area");
+            if (window.scrollY > 30) {  // Adjust this value based on when you want the effect to happen
+                navbar.style.backgroundColor = "rgba(7, 33, 46, 0.98)";  // Dark transparent background
+            } else {
+                navbar.style.backgroundColor = "transparent";
+            }
+        });
+    </script>
+</body>
 </html>

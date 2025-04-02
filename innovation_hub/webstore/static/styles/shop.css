@@ -1,0 +1,82 @@
+/* shop search filters */
+.search-row {
+    align-items: center;
+}
+/* sort to be implemented later */
+.sort-products {
+    display: none;
+}
+.search-filters .search {
+    margin: 100px 20px 50px 10px;
+    border: 1px solid #03131A;
+    padding: 1px 1px;
+    border-radius: 4px;
+    color: #03131A;
+}
+.search input {
+    font-size: 15px;
+    font-family: 'Poppins';
+    padding: 8px 100px 8px 25px;
+    border: 0;
+    outline: none;
+}
+#search-btn {
+    display: inline-block;
+    background-color: white;
+    color: green;
+    padding: 2px 5px 2px 5px;
+    border: 1px solid green;
+    margin-right: 5px;
+    border-radius: 4px;
+}
+/* shop display styles */
+.products-view {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.shop-product-item {
+    border-radius: 4px;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0px 4px 12px rgba(75, 90, 113, 0.2);
+    margin: 10px 5px;
+    padding: 0px 0px 40px 0px;
+    transition: 0.3s ease-in-out;
+}
+.shop-product-item:hover {
+    transform: scale(1.1);
+}
+.shop-product-item {
+    text-align: center;
+}
+.shop-product-item p {
+    margin: 0px auto;
+}
+.shop-product-item h3 {
+    margin-bottom: 5px;
+}
+.shop-product-item img {
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.product-price {
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.product-name {
+    letter-spacing: 0.3px;
+}
+.shop-product-meta > a{
+    font-weight: 500;
+    font-size: 13px;
+    border: 1px solid #5ba515;
+    background-color: #5ba515;
+    color: white;
+    padding: 10px 10px;
+    letter-spacing: 0.6px;
+    border-radius: 50px;
+}
