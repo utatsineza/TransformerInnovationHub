@@ -1,31 +1,29 @@
 <!-- templates layout.html -->
-{% extends 'layout.html' %}
-{% block title %}Shop - Innovation Hub{% endblock %}
-
+{% extends 'layout.html' %} {% block title %}Shop - Innovation Hub{% endblock %}
 {% block page_content %}
-    <div class="search-filters">
-        <div class="container">
-            <div class="row search-row">
-                <div class="search">
-                    <form action="">
-                        <input type="text" name="" id="" placeholder="Search product">
-                        <!-- search-icon to implement submit -->
-                         <input type="submit" name="" id="search-btn" value="search">
-                    </form>
-                </div>
-                <div class="sort-products">
-                    <label for="sort-form"></label>
-                    <div class="sort-form">
-                        <form action="" class="sort-form-block">
-                            <label for="">Sort By: </label>
-                            <input type="text" name="" id="">
-                            <!-- drop -down list -->
-                        </form>
-                    </div>
-                </div>
-            </div>
+<div class="search-filters">
+  <div class="container">
+    <div class="row search-row">
+      <div class="search">
+        <form action="">
+          <input type="text" name="" id="" placeholder="Search product" />
+          <!-- search-icon to implement submit -->
+          <input type="submit" name="" id="search-btn" value="search" />
+        </form>
+      </div>
+      <div class="sort-products">
+        <label for="sort-form"></label>
+        <div class="sort-form">
+          <form action="" class="sort-form-block">
+            <label for="">Sort By: </label>
+            <input type="text" name="" id="" />
+            <!-- drop -down list -->
+          </form>
         </div>
+      </div>
     </div>
+  </div>
+</div>
 
     <div class="product-display">
         <div class="container">
@@ -76,17 +74,17 @@
         </div>
     </div>
 
-    <div class="pages-change">
-        <div class="container">
-            <div class="row">
-                <div class="pg-change-icon">
-                    <a href="#" class="pg-change-link"> < </a>
-                    <a href="#" class="pg-change-link"> 1 </a>
-                    <a href="#" class="pg-change-link"> 2 </a>
-                    <a href="#" class="pg-change-link"> ... </a>
-                    <a href="#" class="pg-change-link"> > </a>
-                </div>
-            </div>
-        </div>
+<div class="pages-change">
+  <div class="container">
+    <div class="row">
+      <div class="pg-change-icon">
+        <a href="#" class="pg-change-link"> < </a>
+        <a href="#" class="pg-change-link"> 1 </a>
+        <a href="#" class="pg-change-link"> 2 </a>
+        <a href="#" class="pg-change-link"> ... </a>
+        <a href="#" class="pg-change-link"> > </a>
+      </div>
     </div>
+  </div>
+</div>
 {% endblock %}
