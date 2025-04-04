@@ -63,16 +63,16 @@
                         </tr>
                         <tr class="cart-summary-rw">
                             <td><strong>Subtotal</strong></td>
-                            <td>$35</td>
+                            <td>${{ totals }}</td>
                         </tr>
                         <tr class="cart-summary-rw">
                             <td>Shipping</td>
-                            <td>$5</td>
+                            <td>$ {{ shipping_cost }}</td>
                         </tr>
-                        <!-- <tr class="cart-summary-rw">
+                        <tr class="cart-summary-rw">
                             <td>Total</td>
-                            <td>$40</td>
-                        </tr> -->
+                            <td>$ {{ general_total }}</td>
+                        </tr>
                     </table>
                     <div class="check-out-btn">
                         <!-- <a href="#">Update Cart</a> -->
