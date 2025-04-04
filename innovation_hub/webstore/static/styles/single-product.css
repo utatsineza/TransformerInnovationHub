@@ -14,7 +14,7 @@
     box-shadow: 0px 4px 12px rgba(75, 90, 113, 0.5);
     border-radius: 4px;
 }
-.stock-qty p {
+.stock-qty > input {
     color: grey;
     display: block;
     border: 1px solid lightgray;

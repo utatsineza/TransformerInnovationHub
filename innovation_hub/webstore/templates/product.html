@@ -29,7 +29,14 @@
                             {% endif%}
                             <p>{{ product.description }}</p>
                             <div class="stock-qty">
-                                <p>15</p>
+                                <!-- <select id="qty-cart" name="quantity" >
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select> -->
+                                <input type="number" id="quantity" name="quantity" min="1" value="1">
                             </div>
                             <div class="product-info-cgtry">
                                 <p><span>Category: </span>{{ product.category }}</p>

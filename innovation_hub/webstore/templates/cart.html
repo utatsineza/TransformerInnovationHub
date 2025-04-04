@@ -13,7 +13,7 @@
                 <div class="cart-items">
                     <table class="cart-info-tb">
                         <tr class="cart-info-hdr">
-                            <th>N0</th>
+                            <th>Del</th>
                             <th>Product Image</th>
                             <th>Name</th>
                             <th>Price</th>
@@ -23,21 +23,30 @@
                         {% if cart_products %}
                             {% for product in cart_products %}
                                 <tr class="cart-tb-rw">
-                                    <td>{{ product.id }}</td>
-                                    <td><img src="{{ product.image.url }}" alt="" width="50px" height="60px"></td>
+                                    <td>
+                                        <button style="font-family: 'Poppins'; font-size: 12px; padding-top: 0px; padding-bottom: 0px; background-color: #0a8b0a; color: white; border-color: white" type="button" data-index="{{ product.id }}" class="delete-product">x</button>
+                                    </td>
+                                    <td><img src="{{ product.image.url }}" alt="" width="50px" height="65px"></td>
                                     <td>{{ product.name }}</td>
-                                    <td>{{ product.price }}</td>
-                                    <td>1</td>
+                                    <td>${{ product.price }}</td>
+                                    {% for product_id, qty in quantities.items %}
+                                        {% if product_id == product.id|slugify %}
+                                        <td>
+                                            <input type="number" id="select{{product.id}}" name="quantity" min="1" value="{{ qty }}" style="width: 100px;">
+                                            <button style="font-family: 'Poppins'; font-size: 12px; padding-top: 0px; padding-bottom: 0px;" type="button" data-index="{{ product.id }}" class="update-cart">Update</button>
+                                        </td>
+                                        {% endif %}
+                                    {% endfor%}
                                     <!-- <td>$10</td> -->
                                 </tr>
                             {% endfor %}
                         {% else %}
                             <tr class="cart-tb-rw">
-                                <td>0</td>
+                                <td><i>Null</i></td>
                                 <td><img src="" alt="" width="50px"></td>
-                                <td></td>
-                                <td></td>
-                                <td>0</td>
+                                <td><i>Null</i></td>
+                                <td><i>Null</i></td>
+                                <td><i>Null</i></td>
                                 <!-- <td>$10</td> -->
                             </tr>
                         {% endif %}
@@ -53,21 +62,21 @@
                             <th>Price</th>
                         </tr>
                         <tr class="cart-summary-rw">
-                            <td>Subtotal</td>
+                            <td><strong>Subtotal</strong></td>
                             <td>$35</td>
                         </tr>
                         <tr class="cart-summary-rw">
                             <td>Shipping</td>
                             <td>$5</td>
                         </tr>
-                        <tr class="cart-summary-rw">
+                        <!-- <tr class="cart-summary-rw">
                             <td>Total</td>
                             <td>$40</td>
-                        </tr>
+                        </tr> -->
                     </table>
                     <div class="check-out-btn">
-                        <a href="#">Update Cart</a>
-                        <a href="checkout/html">Check Out</a>
+                        <!-- <a href="#">Update Cart</a> -->
+                        <a href="{% url 'webstore:checkout' %}">Check Out</a>
                     </div>
                     <div class="coupon">
                         <h3>Apply Coupon</h3>
@@ -80,4 +89,68 @@
             </div>
         </div>
     </div>
+
+<script>
+    // window.addEventListener("scroll", function() {
+    //     let navbar = document.querySelector(".top-header-area");
+    //     if (window.scrollY > 30) {  // Adjust this value based on when you want the effect to happen
+    //         navbar.style.backgroundColor = "rgba(7, 33, 46, 0.98)";  // Dark transparent background
+    //     } else {
+    //         navbar.style.backgroundColor = "transparent";
+    //     }
+    // });
+
+    // update cart function
+    $(document).on('click', '.update-cart', function(e) {
+        e.preventDefault();
+
+        // grab the product id
+        var productid = $(this).data('index'); // not sure .. about this
+        $.ajax({
+            type: 'POST',
+            url: '{% url 'cart_update' %}',
+            data: {
+                product_id: $(this).data('index'),
+                // product_qty: $('#qty-cart option:selected').text(),
+                product_qty: $('#select' + productid).val(), // testing someething
+                csrfmiddlewaretoken: '{{ csrf_token }}',
+                action: 'post'
+            },
+            success: function(json) {
+                // console.log("Cart Quantity Updated:", json.qty);  // for debugging
+                location.reload(); // reload the page on sucess
+
+                $('#cart_quantity').text(json.qty);
+            },
+            error: function(xhr, errmsg, err) {
+                console.error("Error:", errmsg);
+            }
+        });
+    });
+
+    // delete item cart function
+    $(document).on('click', '.delete-product', function(e) {
+        e.preventDefault();
+
+        // grab the product id
+        // var productid = $(this).data('index'); // not sure .. about this
+        $.ajax({
+            type: 'POST',
+            url: '{% url 'cart_delete' %}',
+            data: {
+                product_id: $(this).data('index'),
+                csrfmiddlewaretoken: '{{ csrf_token }}',
+                action: 'post'
+            },
+            success: function(json) {
+                location.reload(); // reload the page on sucess
+
+                $('#cart_quantity').text(json.qty);
+            },
+            error: function(xhr, errmsg, err) {
+                console.error("Error:", errmsg);
+            }
+        });
+    });
+</script>
 {% endblock %}

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/static/styles/all.css">
     <link rel="stylesheet" href="/static/styles/about-styles.css">
     <link rel="stylesheet" href="/static/styles/cart.css">
-    <!-- <link rel="stylesheet" href="/static/styles/checkout.css"> -->
+    <link rel="stylesheet" href="/static/styles/checkout.css">
     <link rel="stylesheet" href="/static/styles/contact.css">
     <link rel="stylesheet" href="/static/styles/shop.css">
     <link rel="stylesheet" href="/static/styles/single-product.css">
@@ -86,21 +86,21 @@
         $(document).on('click', '#add-to-cart', function(e) {
 		e.preventDefault();
 		let productId = $(this).val();
-
 		$.ajax({
 			type: 'POST',
 			url: '{% url 'cart_add' %}',
 			data: {
 				product_id: productId,
+                // product_qty: $('#qty-cart option:selected').text(),
+                product_qty: $('#quantity').val(), // testing someething
 				csrfmiddlewaretoken: '{{ csrf_token }}',
 				action: 'post'
 			},
 			success: function(json) {
-				console.log("Cart Quantity Updated:", json.qty);  // Debug the response
+				console.log("Cart Quantity Updated:", json.qty);  // for debugging
 
-				// Update cart quantity on screen
+
                 $('#cart_quantity').text(json.qty);
-				// document.getElementById('cart_quantity').textContent = json.qty;
 			},
 			error: function(xhr, errmsg, err) {
 				console.error("Error:", errmsg);

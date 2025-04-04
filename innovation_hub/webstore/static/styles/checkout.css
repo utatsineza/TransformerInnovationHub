@@ -15,7 +15,8 @@
 form {
     text-align: center;
 }
-textarea, input {
+.billing-address-box > textarea,
+.billing-address-box > input {
     font-family: 'Poppins';
     font-weight: 400;
     color: black;
@@ -42,15 +43,15 @@ textarea, input {
     /* background-color: #5ba515; */
     background-color: green;
     color: white;
-    padding: 10px 25px;
+    padding: 10px 35px;
     font-weight: 300;
     border-radius: 40px;
     margin-top: 50px;
     margin-bottom: 50px;
     margin-right: 10px;
     border: 0;
-    width: 30%;
-    font-size: 18px;
+    width: 650px;
+    font-size: 16px;
 }
 /* order details */
 .order-details {

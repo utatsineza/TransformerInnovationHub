@@ -64,6 +64,12 @@
                                       &nbsp;
                                       ${{ item.sale_price }}
                                   </p>
+                                  <!-- <select id="qty-cart" style="display: none; position: absolute;">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                  </select> -->
+                                  <input type="number" id="quantity" name="quantity" min="1" value="1" style="display: none; position: absolute;">
                                   <button type="button" value="{{ item.id }}" class="add-to-cart" id="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
                               </div>
                             </div>

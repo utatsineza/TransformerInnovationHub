@@ -332,15 +332,15 @@
             url: '{% url 'cart_add' %}',
             data: {
               product_id: productId,
+              // product_qty: $('#qty-cart option:selected').text(),
+              product_qty: $('#quantity').val(), // testing someething
               csrfmiddlewaretoken: '{{ csrf_token }}',
               action: 'post'
             },
             success: function(json) {
-              console.log("Cart Quantity Updated:", json.qty);  // Debug the response
+              console.log("Cart Quantity Updated:", json.qty);  // Debug data
 
-              // Update cart quantity on screen
               $('#cart_quantity').text(json.qty);
-              // document.getElementById('cart_quantity').textContent = json.qty;
             },
             error: function(xhr, errmsg, err) {
               console.error("Error:", errmsg);
