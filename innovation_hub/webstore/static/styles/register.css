@@ -7,7 +7,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 5px;
+    margin-top: 0px;
     background-image: url(/static/img/bgs/bg-grey-2.jpg);
     background-size: cover;
     background-position: center;
@@ -26,12 +26,12 @@ img {
 }
 .sign-in-block {
     background-color: rgba(255, 255, 255, 0.822);
-    height: 75%;
+    height: 800px;
     width: 600px;
     border-radius: 8px;
     border: 1px solid rgb(196, 189, 177);
     box-shadow: 0px 4px 12px rgba(42, 93, 171, 0.5);
-    padding: 100px 10px 100px 10px;
+    padding: 30px 10px 100px 10px;
 }
 .sign-in {
     text-align: center;
@@ -62,7 +62,7 @@ input{
 }
 
 #button {
-    margin-top: 35px;
+    margin-top: 0px;
     width: 100%;
     border: 2px;
     padding: 15px 30px;
@@ -109,6 +109,6 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 25px;
+    padding: 10px;
     border-top: 1px solid gray;
 }
