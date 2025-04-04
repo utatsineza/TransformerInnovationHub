@@ -26,7 +26,7 @@
     font-weight: 600;
     padding: 20px 1px;
 }
-.add-to-cart a {
+button.single-product-cart-btn {
     display: inline-block;
     margin-top: 5px;
     background-color: white;
@@ -34,10 +34,16 @@
     padding: 15px;
     border-radius: 50px;
     box-shadow: 0px 4px 12px rgba(75, 90, 113, 0.5);
+    border: 0;
+    font-weight: 600;
+    font-size: 1rem;
+}
+button.single-product-cart-btn:hover {
+    cursor: pointer;
 }
 .product-info h3 {
     padding-top: 10px;
-    font-size: 20px;
+    font-size: 22px;
 }
 .product-info h4 {
     font-size: 35px;

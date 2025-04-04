@@ -15,6 +15,21 @@
           <input type="submit" name="" id="search-btn" value="search" />
         </form>
       </div>
+      <div class="dropdown">
+        {% if category %}
+          <button class="dropbtn">Categories: {{ category }} &nbsp; <i class="bi bi-chevron-down"></i></button>
+        {% else %}
+          <button class="dropbtn">Categories: All &nbsp; <i class="bi bi-chevron-down"></i></button>
+        {% endif %}
+        <div class="dropdown-content">
+          <a href="{% url 'webstore:shop' %}">All</a>
+          <a href="{% url 'webstore:category' 'Metal' %}">Metal</a>
+          <a href="{% url 'webstore:category' 'Plastic' %}">Plastic</a>
+          <a href="{% url 'webstore:category' 'Paper' %}">Paper</a>
+          <a href="{% url 'webstore:category' 'Glass' %}">Glass</a>
+          <a href="{% url 'webstore:category' 'Wood' %}">Wood</a>
+        </div>
+      </div>
       <div class="sort-products">
         <label for="sort-form"></label>
         <div class="sort-form">
@@ -33,43 +48,37 @@
         <div class="container">
             <div class="row">
                 <div class="products-view">
-                    <div class="shop-product-item">
-                        <div class="shop-product-img">
-                            <img src="/static/img/products/art-necklace.webp" alt="">
-                        </div>
-                        <div class="shop-product-meta">
-                            <h4 class="product-name">Product</h4>
-                            <p class="product-price">$10</p>
-                            <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i> add to Cart</a>
-                        </div>
-                    </div>
                     {% for item in products %}
                         {% if item.is_sale %}
                             <div class="shop-product-item">
+                              <a href="{% url 'webstore:product' item.id %}" class="shop-product-itm-ln">
                                 <div class="shop-product-img">
                                     <span class="sale-badge"><i class="fas fa-tags"></i> Sale</span>
                                     <img src="{{ item.image.url }}" alt="">
                                 </div>
-                                <div class="shop-product-meta">
-                                    <h4>{{ item.name }}</h4>
-                                    <p class="product-price">
-                                        <strike style="color: #5ba515;">${{ item.price }}</strike>
-                                        &nbsp;
-                                        ${{ item.sale_price }}
-                                    </p>
-                                    <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i> add to Cart</a>
-                                </div>
+                              </a>
+                              <div class="shop-product-meta">
+                                  <h4>{{ item.name }}</h4>
+                                  <p class="product-price">
+                                      <strike style="color: #5ba515;">${{ item.price }}</strike>
+                                      &nbsp;
+                                      ${{ item.sale_price }}
+                                  </p>
+                                  <button type="button" value="{{ item.id }}" class="add-to-cart" id="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                              </div>
                             </div>
                         {% else %}
                             <div class="shop-product-item">
+                              <a href="{% url 'webstore:product' item.id %}" class="shop-product-itm-ln">
                                 <div class="shop-product-img">
                                     <img src="{{ item.image.url }}" alt="">
                                 </div>
-                                <div class="shop-product-meta">
-                                    <h4>{{ item.name }}</h4>
-                                    <p class="product-price">${{ item.price }}</p>
-                                    <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i> add to Cart</a>
-                                </div>
+                              </a>
+                              <div class="shop-product-meta">
+                                  <h4>{{ item.name }}</h4>
+                                  <p class="product-price">${{ item.price }}</p>
+                                  <button type="button" value="{{ item.id }}" class="add-to-cart" id="add-to-cart"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                              </div>
                             </div>
                         {% endif %}
                     {% endfor %}

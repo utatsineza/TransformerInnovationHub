@@ -1,0 +1,46 @@
+<!-- templates layout.html -->
+{% extends 'layout.html' %}
+{% block title %}Product - Innovation Hub{% endblock %}
+{% block page_head %}
+    <p class="subtitle">DETAILS</p>
+    <h1>Product</h1>
+{% endblock %}
+{% block page_content %}
+    <!-- extends from other pages -->
+    <div class="single-product">
+        <div class="container">
+            <div class="row">
+                <div class="product-details">
+                    {% if product %}
+                        <div class="single-product-img">
+                            <img src="{{ product.image.url }}" alt="product image">
+                        </div>
+                        <div class="product-info">
+                            <h3>{{ product.name }}</h3>
+                            <p>Per Piece</p>
+                            {% if product.is_sale %}
+                                <h4>
+                                    <strike style="color: #5ba515;">${{ product.price }}</strike>
+                                        &nbsp;
+                                        ${{ product.sale_price }}
+                                </h4>
+                            {% else %}
+                                <h4>${{ product.price }}</h4>
+                            {% endif%}
+                            <p>{{ product.description }}</p>
+                            <div class="stock-qty">
+                                <p>15</p>
+                            </div>
+                            <div class="product-info-cgtry">
+                                <p><span>Category: </span>{{ product.category }}</p>
+                            </div>
+                            <div class="add-to-cart">
+                                <button type="button" value="{{ product.id}}" class="single-product-cart-btn" id="add-to-cart"><i class="fas fa-shopping-cart"></i> add to Cart</button>
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

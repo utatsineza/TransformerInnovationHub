@@ -23,7 +23,16 @@
                             <ul class="nav-icon">
                                 <li class="icons">
 									<div class="header-icons">
-										<a class="shopping-cart" href="{% url 'webstore:cart' %}"><i class="fas fa-shopping-cart"></i></a>
+										<a class="shopping-cart" href="{% url 'cart_summary' %}">
+											<i class="fas fa-shopping-cart"></i>
+											<span id="cart_quantity" style="color: green;
+											background-color: white;
+											font-size: 13.5px;
+											padding: 0px 4px;
+											border-radius: 50px;
+											margin: 0;
+											text-align: center;">{{ cart|length }}</span>
+										</a>
 										<a class="search-bar-icon" href="#"><i class="fas fa-search"></i></a>
 										{% if user.is_authenticated %}
                                         	<a href="{% url 'webstore:logout_user' %}"><i class="fas fa-sign-out-alt"></i></a>

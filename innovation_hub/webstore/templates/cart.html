@@ -18,32 +18,29 @@
                             <th>Name</th>
                             <th>Price</th>
                             <th>Quantity</th>
-                            <th>Total</th>
+                            <!-- <th>Total</th> -->
                         </tr>
-                        <tr class="cart-tb-rw">
-                            <td>1</td>
-                            <td><img src="" alt="" width="100px"></td>
-                            <td>Light-blue Bulb</td>
-                            <td>$15</td>
-                            <td>1</td>
-                            <td>$10</td>
-                        </tr>
-                        <tr class="cart-tb-rw">
-                            <td>2</td>
-                            <td><img src="" alt="" width="100px"></td>
-                            <td>Green-glass Bulb</td>
-                            <td>$5</td>
-                            <td>1</td>
-                            <td>$20</td>
-                        </tr>
-                        <tr class="cart-tb-rw">
-                            <td>3</td>
-                            <td><img src="" alt="" width="100px"></td>
-                            <td>chewy-bliss Bulk</td>
-                            <td>$15</td>
-                            <td>1</td>
-                            <td>$35</td>
-                        </tr>
+                        {% if cart_products %}
+                            {% for product in cart_products %}
+                                <tr class="cart-tb-rw">
+                                    <td>{{ product.id }}</td>
+                                    <td><img src="{{ product.image.url }}" alt="" width="50px"></td>
+                                    <td>{{ product.name }}</td>
+                                    <td>{{ product.price }}</td>
+                                    <td>1</td>
+                                    <!-- <td>$10</td> -->
+                                </tr>
+                            {% endfor %}
+                        {% else %}
+                            <tr class="cart-tb-rw">
+                                <td>0</td>
+                                <td><img src="" alt="" width="50px"></td>
+                                <td></td>
+                                <td></td>
+                                <td>0</td>
+                                <!-- <td>$10</td> -->
+                            </tr>
+                        {% endif %}
                     </table>
                 </div>
                 <div class="cart-summary">

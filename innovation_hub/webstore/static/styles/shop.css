@@ -8,7 +8,7 @@
 }
 .search-filters .search {
     margin: 100px 20px 50px 10px;
-    border: 1px solid #03131A;
+    border: 1px solid green;
     padding: 1px 1px;
     border-radius: 4px;
     color: #03131A;
@@ -44,6 +44,10 @@
     padding: 0px 0px 40px 0px;
     transition: 0.3s ease-in-out;
 }
+.shop-product-itm-ln {
+    display: block;
+
+}
 .shop-product-item:hover {
     transform: scale(1.1);
 }
@@ -70,18 +74,18 @@
 .product-name {
     letter-spacing: 0.3px;
 }
-.shop-product-meta > a{
+button.add-to-cart {
     font-weight: 500;
     font-size: 13px;
     border: 1px solid #5ba515;
-    /* background-color: #5ba515;
-    color: white; */
     background-color: white;
     color: green;
     padding: 10px 10px;
     letter-spacing: 0.6px;
     border-radius: 50px;
-    font-weight: 500;
+}
+.shop-product-meta button:hover {
+    cursor: pointer;
 }
 /* sale badge */
 .sale-badge {
@@ -104,4 +108,57 @@
 }
 .shop-product-img {
     position: relative;
+}
+
+/* drop down */
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 100px 20px 50px 10px;
+    border: 1px solid green;
+    padding: 1px 1px;
+    border-radius: 4px;
+}
+
+/* Dropdown button */
+.dropbtn {
+    background-color: white;
+    font-family: 'Poppins';
+    color: #5ba515;
+    padding: 7px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown when hovering */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
